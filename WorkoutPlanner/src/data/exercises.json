@@ -1,0 +1,3299 @@
+[
+  {
+    "name": "Rickshaw Carry",
+    "muscleGroup": "forearms",
+    "equipment": "Other",
+    "rating": 9.6,
+    "image": "https://images.pexels.com/photos/834893/pexels-photo-834893.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Single-Leg Press",
+    "muscleGroup": "quadriceps",
+    "equipment": "Machine",
+    "rating": 9.6,
+    "image": "https://images.pexels.com/photos/6455843/pexels-photo-6455843.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Landmine twist",
+    "muscleGroup": "abdominals",
+    "equipment": "Other",
+    "rating": 9.5,
+    "image": "https://images.pexels.com/photos/4662336/pexels-photo-4662336.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Weighted pull-up",
+    "muscleGroup": "lats",
+    "equipment": "Other",
+    "rating": 9.5,
+    "image": "https://images.pexels.com/photos/6539785/pexels-photo-6539785.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "T-Bar Row with Handle",
+    "muscleGroup": "middle back",
+    "equipment": "Other",
+    "rating": 9.5,
+    "image": "https://images.pexels.com/photos/4162481/pexels-photo-4162481.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Palms-down wrist curl over bench",
+    "muscleGroup": "forearms",
+    "equipment": "Barbell",
+    "rating": 9.5,
+    "image": "https://images.pexels.com/photos/6455925/pexels-photo-6455925.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Atlas Stones",
+    "muscleGroup": "lower back",
+    "equipment": "Other",
+    "rating": 9.5,
+    "image": "https://images.pexels.com/photos/9320462/pexels-photo-9320462.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Dumbbell front raise to lateral raise",
+    "muscleGroup": "shoulders",
+    "equipment": "Dumbbell",
+    "rating": 9.5,
+    "image": "https://images.pexels.com/photos/7928625/pexels-photo-7928625.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Clean from Blocks",
+    "muscleGroup": "quadriceps",
+    "equipment": "Barbell",
+    "rating": 9.5,
+    "image": "https://images.pexels.com/photos/10187013/pexels-photo-10187013.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Incline Hammer Curls",
+    "muscleGroup": "biceps",
+    "equipment": "Dumbbell",
+    "rating": 9.5,
+    "image": "https://images.pexels.com/photos/5750853/pexels-photo-5750853.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Straight-bar wrist roll-up",
+    "muscleGroup": "forearms",
+    "equipment": "Unknown",
+    "rating": 9.5,
+    "image": "https://images.pexels.com/photos/7672109/pexels-photo-7672109.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Barbell glute bridge",
+    "muscleGroup": "glutes",
+    "equipment": "Barbell",
+    "rating": 9.4,
+    "image": "https://images.pexels.com/photos/13588102/pexels-photo-13588102.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Clean and press",
+    "muscleGroup": "shoulders",
+    "equipment": "Barbell",
+    "rating": 9.4,
+    "image": "https://images.pexels.com/photos/4327024/pexels-photo-4327024.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Triceps dip",
+    "muscleGroup": "triceps",
+    "equipment": "Body Only",
+    "rating": 9.4,
+    "image": "https://images.pexels.com/photos/12999606/pexels-photo-12999606.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Dumbbell farmer's walk",
+    "muscleGroup": "forearms",
+    "equipment": "Other",
+    "rating": 9.4,
+    "image": "https://images.pexels.com/photos/4754001/pexels-photo-4754001.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Palms-up wrist curl over bench",
+    "muscleGroup": "forearms",
+    "equipment": "Barbell",
+    "rating": 9.4,
+    "image": "https://images.pexels.com/photos/6455925/pexels-photo-6455925.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Barbell Full Squat",
+    "muscleGroup": "quadriceps",
+    "equipment": "Barbell",
+    "rating": 9.4,
+    "image": "https://images.pexels.com/photos/4720784/pexels-photo-4720784.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Barbell deficit deadlift",
+    "muscleGroup": "lower back",
+    "equipment": "Barbell",
+    "rating": 9.4,
+    "image": "https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Barbell Deadlift",
+    "muscleGroup": "hamstrings",
+    "equipment": "Barbell",
+    "rating": 9.4,
+    "image": "https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Single-arm palm-in dumbbell shoulder press",
+    "muscleGroup": "shoulders",
+    "equipment": "Dumbbell",
+    "rating": 9.4,
+    "image": "https://images.pexels.com/photos/6550851/pexels-photo-6550851.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Romanian Deadlift With Dumbbells",
+    "muscleGroup": "hamstrings",
+    "equipment": "Dumbbell",
+    "rating": 9.4,
+    "image": "https://images.pexels.com/photos/4164450/pexels-photo-4164450.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Tire flip",
+    "muscleGroup": "quadriceps",
+    "equipment": "Other",
+    "rating": 9.4,
+    "image": "https://images.pexels.com/photos/4720825/pexels-photo-4720825.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Clean Deadlift",
+    "muscleGroup": "hamstrings",
+    "equipment": "Barbell",
+    "rating": 9.4,
+    "image": "https://images.pexels.com/photos/949131/pexels-photo-949131.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Elbow plank",
+    "muscleGroup": "abdominals",
+    "equipment": "Body Only",
+    "rating": 9.3,
+    "image": "https://images.pexels.com/photos/4753996/pexels-photo-4753996.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Bottoms Up",
+    "muscleGroup": "abdominals",
+    "equipment": "Body Only",
+    "rating": 9.3,
+    "image": "https://images.pexels.com/photos/6295997/pexels-photo-6295997.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Barbell back squat to box",
+    "muscleGroup": "quadriceps",
+    "equipment": "Barbell",
+    "rating": 9.3,
+    "image": "https://images.pexels.com/photos/4761339/pexels-photo-4761339.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Clean and jerk",
+    "muscleGroup": "shoulders",
+    "equipment": "Barbell",
+    "rating": 9.3,
+    "image": "https://images.pexels.com/photos/4327024/pexels-photo-4327024.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Single-arm kettlebell push-press",
+    "muscleGroup": "shoulders",
+    "equipment": "Kettlebells",
+    "rating": 9.3,
+    "image": "https://images.pexels.com/photos/4804333/pexels-photo-4804333.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Push-press",
+    "muscleGroup": "quadriceps",
+    "equipment": "Barbell",
+    "rating": 9.3,
+    "image": "https://images.pexels.com/photos/4753996/pexels-photo-4753996.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Suspended ab fall-out",
+    "muscleGroup": "abdominals",
+    "equipment": "Other",
+    "rating": 9.3,
+    "image": "https://images.pexels.com/photos/416778/pexels-photo-416778.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Military press",
+    "muscleGroup": "shoulders",
+    "equipment": "Barbell",
+    "rating": 9.3,
+    "image": "https://images.pexels.com/photos/3837757/pexels-photo-3837757.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Power snatch-",
+    "muscleGroup": "quadriceps",
+    "equipment": "Barbell",
+    "rating": 9.3,
+    "image": "https://images.pexels.com/photos/14843494/pexels-photo-14843494.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Sumo deadlift",
+    "muscleGroup": "hamstrings",
+    "equipment": "Barbell",
+    "rating": 9.3,
+    "image": "https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Hang Clean",
+    "muscleGroup": "quadriceps",
+    "equipment": "Barbell",
+    "rating": 9.3,
+    "image": "https://images.pexels.com/photos/4327024/pexels-photo-4327024.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Dumbbell V-Sit Cross Jab",
+    "muscleGroup": "abdominals",
+    "equipment": "Dumbbell",
+    "rating": 9.3,
+    "image": "https://images.pexels.com/photos/4804059/pexels-photo-4804059.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Reverse Band Box Squat",
+    "muscleGroup": "quadriceps",
+    "equipment": "Unknown",
+    "rating": 9.3,
+    "image": "https://images.pexels.com/photos/1552250/pexels-photo-1552250.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Standing palms-in shoulder press",
+    "muscleGroup": "shoulders",
+    "equipment": "Dumbbell",
+    "rating": 9.3,
+    "image": "https://images.pexels.com/photos/4720274/pexels-photo-4720274.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Standing cable low-to-high twist",
+    "muscleGroup": "abdominals",
+    "equipment": "Cable",
+    "rating": 9.3,
+    "image": "https://images.pexels.com/photos/4662336/pexels-photo-4662336.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Decline EZ-bar skullcrusher",
+    "muscleGroup": "triceps",
+    "equipment": "E-Z Curl Bar",
+    "rating": 9.3,
+    "image": "https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Standing behind-the-back wrist curl",
+    "muscleGroup": "forearms",
+    "equipment": "Barbell",
+    "rating": 9.3,
+    "image": "https://images.pexels.com/photos/18060134/pexels-photo-18060134.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Seated finger curl",
+    "muscleGroup": "forearms",
+    "equipment": "Barbell",
+    "rating": 9.3,
+    "image": "https://images.pexels.com/photos/6550874/pexels-photo-6550874.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Wide-grip barbell curl",
+    "muscleGroup": "biceps",
+    "equipment": "Barbell",
+    "rating": 9.3,
+    "image": "https://images.pexels.com/photos/29780130/pexels-photo-29780130.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Dumbbell spell caster",
+    "muscleGroup": "abdominals",
+    "equipment": "Dumbbell",
+    "rating": 9.3,
+    "image": "https://images.pexels.com/photos/4754001/pexels-photo-4754001.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Dumbbell floor press",
+    "muscleGroup": "triceps",
+    "equipment": "Dumbbell",
+    "rating": 9.3,
+    "image": "https://images.pexels.com/photos/5412248/pexels-photo-5412248.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Lying Face Down Plate Neck Resistance",
+    "muscleGroup": "neck",
+    "equipment": "Other",
+    "rating": 9.3,
+    "image": "https://images.pexels.com/photos/4944442/pexels-photo-4944442.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Pullups",
+    "muscleGroup": "lats",
+    "equipment": "Body Only",
+    "rating": 9.2,
+    "image": "https://images.pexels.com/photos/7673597/pexels-photo-7673597.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Decline reverse crunch",
+    "muscleGroup": "abdominals",
+    "equipment": "Other",
+    "rating": 9.2,
+    "image": "https://images.pexels.com/photos/6455815/pexels-photo-6455815.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Dumbbell Bench Press",
+    "muscleGroup": "chest",
+    "equipment": "Dumbbell",
+    "rating": 9.2,
+    "image": "https://images.pexels.com/photos/3837757/pexels-photo-3837757.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Jumping rope",
+    "muscleGroup": "quadriceps",
+    "equipment": "Body Only",
+    "rating": 9.2,
+    "image": "https://images.pexels.com/photos/4761352/pexels-photo-4761352.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Seated barbell shoulder press",
+    "muscleGroup": "shoulders",
+    "equipment": "Barbell",
+    "rating": 9.2,
+    "image": "https://images.pexels.com/photos/3837757/pexels-photo-3837757.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "EZ-bar spider curl",
+    "muscleGroup": "biceps",
+    "equipment": "Barbell",
+    "rating": 9.2,
+    "image": "https://images.pexels.com/photos/6455925/pexels-photo-6455925.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Smith machine shrug",
+    "muscleGroup": "traps",
+    "equipment": "Machine",
+    "rating": 9.2,
+    "image": "https://images.pexels.com/photos/7031706/pexels-photo-7031706.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Smith Machine Calf Raise",
+    "muscleGroup": "calves",
+    "equipment": "Machine",
+    "rating": 9.2,
+    "image": "https://images.pexels.com/photos/4842724/pexels-photo-4842724.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Romanian Deadlift from Deficit",
+    "muscleGroup": "hamstrings",
+    "equipment": "Barbell",
+    "rating": 9.2,
+    "image": "https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Power Snatch",
+    "muscleGroup": "hamstrings",
+    "equipment": "Barbell",
+    "rating": 9.2,
+    "image": "https://images.pexels.com/photos/14843494/pexels-photo-14843494.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Pushups",
+    "muscleGroup": "chest",
+    "equipment": "Body Only",
+    "rating": 9.2,
+    "image": "https://images.pexels.com/photos/4753996/pexels-photo-4753996.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Barbell walking lunge",
+    "muscleGroup": "quadriceps",
+    "equipment": "Barbell",
+    "rating": 9.2,
+    "image": "https://images.pexels.com/photos/30994841/pexels-photo-30994841.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Front Squats With Two Kettlebells",
+    "muscleGroup": "quadriceps",
+    "equipment": "Kettlebells",
+    "rating": 9.2,
+    "image": "https://images.pexels.com/photos/14673247/pexels-photo-14673247.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Spider crawl",
+    "muscleGroup": "abdominals",
+    "equipment": "Body Only",
+    "rating": 9.2,
+    "image": "https://images.pexels.com/photos/7337617/pexels-photo-7337617.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Power Clean from Blocks",
+    "muscleGroup": "hamstrings",
+    "equipment": "Barbell",
+    "rating": 9.2,
+    "image": "https://images.pexels.com/photos/11241445/pexels-photo-11241445.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Single Leg Push-off",
+    "muscleGroup": "quadriceps",
+    "equipment": "Other",
+    "rating": 9.2,
+    "image": "https://images.pexels.com/photos/8554990/pexels-photo-8554990.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Hip Circles (Prone)",
+    "muscleGroup": "abductors",
+    "equipment": "Unknown",
+    "rating": 9.2,
+    "image": "https://images.pexels.com/photos/6767220/pexels-photo-6767220.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Reverse-grip bent-over row",
+    "muscleGroup": "middle back",
+    "equipment": "Barbell",
+    "rating": 9.2,
+    "image": "https://images.pexels.com/photos/7031706/pexels-photo-7031706.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Seated Two-Arm Palms-Up Low-Pulley Wrist Curl",
+    "muscleGroup": "forearms",
+    "equipment": "Cable",
+    "rating": 9.2,
+    "image": "https://images.pexels.com/photos/4498279/pexels-photo-4498279.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Back extension",
+    "muscleGroup": "lower back",
+    "equipment": "Body Only",
+    "rating": 9.1,
+    "image": "https://images.pexels.com/photos/28061/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Close-grip bench press",
+    "muscleGroup": "chest",
+    "equipment": "Barbell",
+    "rating": 9.1,
+    "image": "https://images.pexels.com/photos/3837757/pexels-photo-3837757.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Cocoons",
+    "muscleGroup": "abdominals",
+    "equipment": "Body Only",
+    "rating": 9.1,
+    "image": "https://images.pexels.com/photos/33059196/pexels-photo-33059196.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Cross-Body Crunch",
+    "muscleGroup": "abdominals",
+    "equipment": "Body Only",
+    "rating": 9.1,
+    "image": "https://images.pexels.com/photos/6455815/pexels-photo-6455815.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Dumbbell Flyes",
+    "muscleGroup": "chest",
+    "equipment": "Dumbbell",
+    "rating": 9.1,
+    "image": "https://images.pexels.com/photos/4754001/pexels-photo-4754001.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Hammer Curls",
+    "muscleGroup": "biceps",
+    "equipment": "Dumbbell",
+    "rating": 9.1,
+    "image": "https://images.pexels.com/photos/5750853/pexels-photo-5750853.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Incline dumbbell bench press",
+    "muscleGroup": "chest",
+    "equipment": "Dumbbell",
+    "rating": 9.1,
+    "image": "https://images.pexels.com/photos/3837757/pexels-photo-3837757.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Low-cable cross-over",
+    "muscleGroup": "chest",
+    "equipment": "Cable",
+    "rating": 9.1,
+    "image": "https://images.pexels.com/photos/5327498/pexels-photo-5327498.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Single-arm high-cable side bend",
+    "muscleGroup": "abdominals",
+    "equipment": "Cable",
+    "rating": 9.1,
+    "image": "https://images.pexels.com/photos/7045738/pexels-photo-7045738.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Seated Dumbbell Press",
+    "muscleGroup": "shoulders",
+    "equipment": "Dumbbell",
+    "rating": 9.1,
+    "image": "https://images.pexels.com/photos/3837757/pexels-photo-3837757.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Standing dumbbell shoulder press",
+    "muscleGroup": "shoulders",
+    "equipment": "Dumbbell",
+    "rating": 9.1,
+    "image": "https://images.pexels.com/photos/18060235/pexels-photo-18060235.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Single Leg Push-off",
+    "muscleGroup": "quadriceps",
+    "equipment": "Other",
+    "rating": 9.2,
+    "image": "https://images.pexels.com/photos/8554990/pexels-photo-8554990.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Hip Circles (Prone)",
+    "muscleGroup": "abductors",
+    "equipment": "Unknown",
+    "rating": 9.2,
+    "image": "https://images.pexels.com/photos/6767220/pexels-photo-6767220.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Reverse-grip bent-over row",
+    "muscleGroup": "middle back",
+    "equipment": "Barbell",
+    "rating": 9.2,
+    "image": "https://images.pexels.com/photos/7031706/pexels-photo-7031706.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Seated Two-Arm Palms-Up Low-Pulley Wrist Curl",
+    "muscleGroup": "forearms",
+    "equipment": "Cable",
+    "rating": 9.2,
+    "image": "https://images.pexels.com/photos/4498279/pexels-photo-4498279.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Back extension",
+    "muscleGroup": "lower back",
+    "equipment": "Body Only",
+    "rating": 9.1,
+    "image": "https://images.pexels.com/photos/28061/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Close-grip bench press",
+    "muscleGroup": "chest",
+    "equipment": "Barbell",
+    "rating": 9.1,
+    "image": "https://images.pexels.com/photos/3837757/pexels-photo-3837757.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Cocoons",
+    "muscleGroup": "abdominals",
+    "equipment": "Body Only",
+    "rating": 9.1,
+    "image": "https://images.pexels.com/photos/33059196/pexels-photo-33059196.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Cross-Body Crunch",
+    "muscleGroup": "abdominals",
+    "equipment": "Body Only",
+    "rating": 9.1,
+    "image": "https://images.pexels.com/photos/6455815/pexels-photo-6455815.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Dumbbell Flyes",
+    "muscleGroup": "chest",
+    "equipment": "Dumbbell",
+    "rating": 9.1,
+    "image": "https://images.pexels.com/photos/4754001/pexels-photo-4754001.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Hammer Curls",
+    "muscleGroup": "biceps",
+    "equipment": "Dumbbell",
+    "rating": 9.1,
+    "image": "https://images.pexels.com/photos/5750853/pexels-photo-5750853.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Incline dumbbell bench press",
+    "muscleGroup": "chest",
+    "equipment": "Dumbbell",
+    "rating": 9.1,
+    "image": "https://images.pexels.com/photos/3837757/pexels-photo-3837757.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Seated Dumbbell Press",
+    "muscleGroup": "shoulders",
+    "equipment": "Dumbbell",
+    "rating": 9.1,
+    "image": "https://images.pexels.com/photos/3837757/pexels-photo-3837757.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Standing dumbbell shoulder press",
+    "muscleGroup": "shoulders",
+    "equipment": "Dumbbell",
+    "rating": 9.1,
+    "image": "https://images.pexels.com/photos/18060235/pexels-photo-18060235.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "EZ-Bar Curl",
+    "muscleGroup": "biceps",
+    "equipment": "E-Z Curl Bar",
+    "rating": 9.1,
+    "image": "https://images.pexels.com/photos/6455925/pexels-photo-6455925.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Olympic Squat",
+    "muscleGroup": "quadriceps",
+    "equipment": "Barbell",
+    "rating": 9.1,
+    "image": "https://images.pexels.com/photos/949131/pexels-photo-949131.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Natural Glute Ham Raise",
+    "muscleGroup": "hamstrings",
+    "equipment": "Body Only",
+    "rating": 9.1,
+    "image": "https://images.pexels.com/photos/6311690/pexels-photo-6311690.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Axle Deadlift",
+    "muscleGroup": "lower back",
+    "equipment": "Other",
+    "rating": 9.1,
+    "image": "https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Zottman Curl",
+    "muscleGroup": "biceps",
+    "equipment": "Unknown",
+    "rating": 9.1,
+    "image": "https://images.pexels.com/photos/6455925/pexels-photo-6455925.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Glute ham raise-",
+    "muscleGroup": "hamstrings",
+    "equipment": "None",
+    "rating": 9.1,
+    "image": "https://images.pexels.com/photos/416778/pexels-photo-416778.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Single-arm lateral raise",
+    "muscleGroup": "shoulders",
+    "equipment": "Dumbbell",
+    "rating": 9.1,
+    "image": "https://images.pexels.com/photos/27433183/pexels-photo-27433183.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Power Partials",
+    "muscleGroup": "shoulders",
+    "equipment": "Dumbbell",
+    "rating": 9.1,
+    "image": "https://images.pexels.com/photos/14843494/pexels-photo-14843494.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Leverage Shrug",
+    "muscleGroup": "traps",
+    "equipment": "Machine",
+    "rating": 9.1,
+    "image": "https://images.pexels.com/photos/16552819/pexels-photo-16552819.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Cable V-bar push-down",
+    "muscleGroup": "triceps",
+    "equipment": "Cable",
+    "rating": 9.1,
+    "image": "https://images.pexels.com/photos/3076510/pexels-photo-3076510.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Wrist Roller",
+    "muscleGroup": "forearms",
+    "equipment": "Other",
+    "rating": 9.1,
+    "image": "https://images.pexels.com/photos/7991679/pexels-photo-7991679.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Incline dumbbell reverse fly",
+    "muscleGroup": "shoulders",
+    "equipment": "Dumbbell",
+    "rating": 9.1,
+    "image": "https://images.pexels.com/photos/11433027/pexels-photo-11433027.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Stair climber",
+    "muscleGroup": "quadriceps",
+    "equipment": "Machine",
+    "rating": 9.1,
+    "image": "https://images.pexels.com/photos/5383803/pexels-photo-5383803.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Elbow-to-knee crunch",
+    "muscleGroup": "abdominals",
+    "equipment": "Body Only",
+    "rating": 9.1,
+    "image": "https://images.pexels.com/photos/6455938/pexels-photo-6455938.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Kettlebell Pistol Squat",
+    "muscleGroup": "quadriceps",
+    "equipment": "Kettlebells",
+    "rating": 9.1,
+    "image": "https://images.pexels.com/photos/4720248/pexels-photo-4720248.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Overhead dumbbell front raise",
+    "muscleGroup": "shoulders",
+    "equipment": "Dumbbell",
+    "rating": 9.1,
+    "image": "https://images.pexels.com/photos/4397833/pexels-photo-4397833.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Biceps curl to shoulder press",
+    "muscleGroup": "biceps",
+    "equipment": "Dumbbell",
+    "rating": 9.1,
+    "image": "https://images.pexels.com/photos/13020494/pexels-photo-13020494.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Weighted bench dip",
+    "muscleGroup": "triceps",
+    "equipment": "Body Only",
+    "rating": 9.1,
+    "image": "https://images.pexels.com/photos/5496589/pexels-photo-5496589.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Barbell Hip Thrust",
+    "muscleGroup": "glutes",
+    "equipment": "Barbell",
+    "rating": 9.1,
+    "image": "https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Forward lunge",
+    "muscleGroup": "quadriceps",
+    "equipment": "Body Only",
+    "rating": 9,
+    "image": "https://images.pexels.com/photos/6516185/pexels-photo-6516185.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Barbell Bench Press - Medium Grip",
+    "muscleGroup": "chest",
+    "equipment": "Barbell",
+    "rating": 9,
+    "image": "https://images.pexels.com/photos/3837757/pexels-photo-3837757.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Chest dip",
+    "muscleGroup": "chest",
+    "equipment": "Other",
+    "rating": 9,
+    "image": "https://images.pexels.com/photos/4761792/pexels-photo-4761792.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Seated dumbbell shoulder press",
+    "muscleGroup": "shoulders",
+    "equipment": "Dumbbell",
+    "rating": 9,
+    "image": "https://images.pexels.com/photos/3837757/pexels-photo-3837757.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Barbell Curl",
+    "muscleGroup": "biceps",
+    "equipment": "Barbell",
+    "rating": 9,
+    "image": "https://images.pexels.com/photos/7294687/pexels-photo-7294687.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "EZ-Bar Skullcrusher",
+    "muscleGroup": "triceps",
+    "equipment": "E-Z Curl Bar",
+    "rating": 9,
+    "image": "https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "One-Arm Dumbbell Row",
+    "muscleGroup": "middle back",
+    "equipment": "Dumbbell",
+    "rating": 9,
+    "image": "https://images.pexels.com/photos/6551071/pexels-photo-6551071.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Alternating standing shoulder press",
+    "muscleGroup": "shoulders",
+    "equipment": "Dumbbell",
+    "rating": 9,
+    "image": "https://images.pexels.com/photos/4720274/pexels-photo-4720274.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Concentration curl",
+    "muscleGroup": "biceps",
+    "equipment": "Dumbbell",
+    "rating": 9,
+    "image": "https://images.pexels.com/photos/15216128/pexels-photo-15216128.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Decline Crunch",
+    "muscleGroup": "abdominals",
+    "equipment": "Body Only",
+    "rating": 9,
+    "image": "https://images.pexels.com/photos/6455815/pexels-photo-6455815.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Decline Dumbbell Flyes",
+    "muscleGroup": "chest",
+    "equipment": "Dumbbell",
+    "rating": 9,
+    "image": "https://images.pexels.com/photos/4754001/pexels-photo-4754001.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Single-arm incline rear delt raise",
+    "muscleGroup": "shoulders",
+    "equipment": "Dumbbell",
+    "rating": 9,
+    "image": "https://images.pexels.com/photos/27433183/pexels-photo-27433183.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Alternating dumbbell front raise",
+    "muscleGroup": "shoulders",
+    "equipment": "Dumbbell",
+    "rating": 9,
+    "image": "https://images.pexels.com/photos/7928625/pexels-photo-7928625.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Hanging toes-to-bar",
+    "muscleGroup": "abdominals",
+    "equipment": "Body Only",
+    "rating": 9,
+    "image": "https://images.pexels.com/photos/791764/pexels-photo-791764.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Narrow-stance squat",
+    "muscleGroup": "quadriceps",
+    "equipment": "Barbell",
+    "rating": 9,
+    "image": "https://images.pexels.com/photos/18187618/pexels-photo-18187618.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Kneeling cable oblique crunch",
+    "muscleGroup": "abdominals",
+    "equipment": "Cable",
+    "rating": 9,
+    "image": "https://images.pexels.com/photos/13965335/pexels-photo-13965335.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Reverse Grip Triceps Pushdown",
+    "muscleGroup": "triceps",
+    "equipment": "Cable",
+    "rating": 9,
+    "image": "https://images.pexels.com/photos/5327482/pexels-photo-5327482.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Bear crawl sled drag",
+    "muscleGroup": "quadriceps",
+    "equipment": "Other",
+    "rating": 9,
+    "image": "https://images.pexels.com/photos/4853878/pexels-photo-4853878.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Rocky Pull-Ups/Pulldowns",
+    "muscleGroup": "lats",
+    "equipment": "Other",
+    "rating": 9,
+    "image": "https://images.pexels.com/photos/5383567/pexels-photo-5383567.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Snatch-Grip Behind-The-Neck Overhead Press",
+    "muscleGroup": "shoulders",
+    "equipment": "Barbell",
+    "rating": 9,
+    "image": "https://images.pexels.com/photos/7671461/pexels-photo-7671461.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Box Squat with Bands",
+    "muscleGroup": "quadriceps",
+    "equipment": "Barbell",
+    "rating": 9,
+    "image": "https://images.pexels.com/photos/1552250/pexels-photo-1552250.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Flexor Incline Dumbbell Curls",
+    "muscleGroup": "biceps",
+    "equipment": "Dumbbell",
+    "rating": 9,
+    "image": "https://images.pexels.com/photos/17086560/pexels-photo-17086560.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Seated One-Arm Dumbbell Palms-Up Wrist Curl",
+    "muscleGroup": "forearms",
+    "equipment": "Dumbbell",
+    "rating": 9,
+    "image": "https://images.pexels.com/photos/6550874/pexels-photo-6550874.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Thigh adductor",
+    "muscleGroup": "adductors",
+    "equipment": "Machine",
+    "rating": 9,
+    "image": "https://images.pexels.com/photos/13451969/pexels-photo-13451969.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Machine Bicep Curl",
+    "muscleGroup": "biceps",
+    "equipment": "Machine",
+    "rating": 9,
+    "image": "https://images.pexels.com/photos/6550874/pexels-photo-6550874.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Seated Palms-Down Barbell Wrist Curl",
+    "muscleGroup": "forearms",
+    "equipment": "Unknown",
+    "rating": 9,
+    "image": "https://images.pexels.com/photos/3917334/pexels-photo-3917334.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Single-arm incline rear delt raise",
+    "muscleGroup": "shoulders",
+    "equipment": "Dumbbell",
+    "rating": 9,
+    "image": "https://images.pexels.com/photos/27433183/pexels-photo-27433183.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Alternating dumbbell front raise",
+    "muscleGroup": "shoulders",
+    "equipment": "Dumbbell",
+    "rating": 9,
+    "image": "https://images.pexels.com/photos/7928625/pexels-photo-7928625.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Hanging toes-to-bar",
+    "muscleGroup": "abdominals",
+    "equipment": "Body Only",
+    "rating": 9,
+    "image": "https://images.pexels.com/photos/791764/pexels-photo-791764.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Narrow-stance squat",
+    "muscleGroup": "quadriceps",
+    "equipment": "Barbell",
+    "rating": 9,
+    "image": "https://images.pexels.com/photos/18187618/pexels-photo-18187618.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Kneeling cable oblique crunch",
+    "muscleGroup": "abdominals",
+    "equipment": "Cable",
+    "rating": 9,
+    "image": "https://images.pexels.com/photos/13965335/pexels-photo-13965335.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Reverse Grip Triceps Pushdown",
+    "muscleGroup": "triceps",
+    "equipment": "Cable",
+    "rating": 9,
+    "image": "https://images.pexels.com/photos/5327482/pexels-photo-5327482.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Bear crawl sled drag",
+    "muscleGroup": "quadriceps",
+    "equipment": "Other",
+    "rating": 9,
+    "image": "https://images.pexels.com/photos/4853878/pexels-photo-4853878.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Rocky Pull-Ups/Pulldowns",
+    "muscleGroup": "lats",
+    "equipment": "Other",
+    "rating": 9,
+    "image": "https://images.pexels.com/photos/5383567/pexels-photo-5383567.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Snatch-Grip Behind-The-Neck Overhead Press",
+    "muscleGroup": "shoulders",
+    "equipment": "Barbell",
+    "rating": 9,
+    "image": "https://images.pexels.com/photos/7671461/pexels-photo-7671461.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Box Squat with Bands",
+    "muscleGroup": "quadriceps",
+    "equipment": "Barbell",
+    "rating": 9,
+    "image": "https://images.pexels.com/photos/1552250/pexels-photo-1552250.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Flexor Incline Dumbbell Curls",
+    "muscleGroup": "biceps",
+    "equipment": "Dumbbell",
+    "rating": 9,
+    "image": "https://images.pexels.com/photos/17086560/pexels-photo-17086560.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Seated One-Arm Dumbbell Palms-Up Wrist Curl",
+    "muscleGroup": "forearms",
+    "equipment": "Dumbbell",
+    "rating": 9,
+    "image": "https://images.pexels.com/photos/6550874/pexels-photo-6550874.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Machine Bicep Curl",
+    "muscleGroup": "biceps",
+    "equipment": "Machine",
+    "rating": 9,
+    "image": "https://images.pexels.com/photos/6550874/pexels-photo-6550874.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Seated Palms-Down Barbell Wrist Curl",
+    "muscleGroup": "forearms",
+    "equipment": "Unknown",
+    "rating": 9,
+    "image": "https://images.pexels.com/photos/3917334/pexels-photo-3917334.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Car driver",
+    "muscleGroup": "shoulders",
+    "equipment": "Other",
+    "rating": 9,
+    "image": "https://images.pexels.com/photos/5640522/pexels-photo-5640522.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Alternating Deltoid Raise",
+    "muscleGroup": "shoulders",
+    "equipment": "Dumbbell",
+    "rating": 9,
+    "image": "https://images.pexels.com/photos/416778/pexels-photo-416778.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Hanging Oblique Knee Raise",
+    "muscleGroup": "abdominals",
+    "equipment": "Body Only",
+    "rating": 9,
+    "image": "https://images.pexels.com/photos/7894601/pexels-photo-7894601.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Bodyweight Flyes",
+    "muscleGroup": "chest",
+    "equipment": "E-Z Curl Bar",
+    "rating": 9,
+    "image": "https://images.pexels.com/photos/4164451/pexels-photo-4164451.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Standing Calf Raises",
+    "muscleGroup": "calves",
+    "equipment": "Machine",
+    "rating": 9,
+    "image": "https://images.pexels.com/photos/8436595/pexels-photo-8436595.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Push-Ups - Close Triceps Position",
+    "muscleGroup": "triceps",
+    "equipment": "Body Only",
+    "rating": 9,
+    "image": "https://images.pexels.com/photos/4790417/pexels-photo-4790417.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "One-Arm Long Bar Row",
+    "muscleGroup": "middle back",
+    "equipment": "Barbell",
+    "rating": 9,
+    "image": "https://images.pexels.com/photos/791764/pexels-photo-791764.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Overhead cable curl",
+    "muscleGroup": "biceps",
+    "equipment": "Cable",
+    "rating": 9,
+    "image": "https://images.pexels.com/photos/4397833/pexels-photo-4397833.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Single-dumbbell front raise",
+    "muscleGroup": "shoulders",
+    "equipment": "Dumbbell",
+    "rating": 9,
+    "image": "https://images.pexels.com/photos/7991917/pexels-photo-7991917.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Incline cable chest fly",
+    "muscleGroup": "chest",
+    "equipment": "Cable",
+    "rating": 9,
+    "image": "https://images.pexels.com/photos/29778851/pexels-photo-29778851.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Single-leg depth squat",
+    "muscleGroup": "quadriceps",
+    "equipment": "Bands",
+    "rating": 9,
+    "image": "https://images.pexels.com/photos/4720248/pexels-photo-4720248.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Dumbbell suitcase crunch",
+    "muscleGroup": "abdominals",
+    "equipment": "Medicine Ball",
+    "rating": 9,
+    "image": "https://images.pexels.com/photos/4754001/pexels-photo-4754001.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Plate Twist",
+    "muscleGroup": "abdominals",
+    "equipment": "Other",
+    "rating": 9,
+    "image": "https://images.pexels.com/photos/4662336/pexels-photo-4662336.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Single-leg cable hip extension",
+    "muscleGroup": "glutes",
+    "equipment": "Cable",
+    "rating": 9,
+    "image": "https://images.pexels.com/photos/29545196/pexels-photo-29545196.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Weighted Jump Squat",
+    "muscleGroup": "quadriceps",
+    "equipment": "Barbell",
+    "rating": 9,
+    "image": "https://images.pexels.com/photos/4761339/pexels-photo-4761339.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Squat with Chains",
+    "muscleGroup": "quadriceps",
+    "equipment": "Barbell",
+    "rating": 9,
+    "image": "https://images.pexels.com/photos/1552106/pexels-photo-1552106.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Gorilla Chin/Crunch",
+    "muscleGroup": "abdominals",
+    "equipment": "Body Only",
+    "rating": 9,
+    "image": "https://images.pexels.com/photos/7675401/pexels-photo-7675401.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Kneeling cable triceps extension",
+    "muscleGroup": "triceps",
+    "equipment": "Cable",
+    "rating": 9,
+    "image": "https://images.pexels.com/photos/11041331/pexels-photo-11041331.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Kneeling Cable Crunch With Alternating Oblique Twists",
+    "muscleGroup": "abdominals",
+    "equipment": "Cables",
+    "rating": 8.9,
+    "image": "https://images.pexels.com/photos/13965335/pexels-photo-13965335.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Bicycling",
+    "muscleGroup": "quadriceps",
+    "equipment": "Other",
+    "rating": 8.9,
+    "image": "https://images.pexels.com/photos/4853854/pexels-photo-4853854.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Arnold press",
+    "muscleGroup": "shoulders",
+    "equipment": "Dumbbell",
+    "rating": 8.9,
+    "image": "https://images.pexels.com/photos/3837757/pexels-photo-3837757.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Weighted Crunches",
+    "muscleGroup": "abdominals",
+    "equipment": "Other",
+    "rating": 8.9,
+    "image": "https://images.pexels.com/photos/8038636/pexels-photo-8038636.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Single-arm cable triceps extension",
+    "muscleGroup": "triceps",
+    "equipment": "Cable",
+    "rating": 8.9,
+    "image": "https://images.pexels.com/photos/11041331/pexels-photo-11041331.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Barbell roll-out",
+    "muscleGroup": "abdominals",
+    "equipment": "Barbell",
+    "rating": 8.9,
+    "image": "https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Kneeling cable crunch",
+    "muscleGroup": "abdominals",
+    "equipment": "Cable",
+    "rating": 8.9,
+    "image": "https://images.pexels.com/photos/13965335/pexels-photo-13965335.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Exercise Ball Pull-In",
+    "muscleGroup": "abdominals",
+    "equipment": "Exercise Ball",
+    "rating": 8.9,
+    "image": "https://images.pexels.com/photos/220383/pexels-photo-220383.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Hanging leg raise",
+    "muscleGroup": "abdominals",
+    "equipment": "Body Only",
+    "rating": 8.9,
+    "image": "https://images.pexels.com/photos/5916413/pexels-photo-5916413.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Barbell Ab Rollout - On Knees",
+    "muscleGroup": "abdominals",
+    "equipment": "Barbell",
+    "rating": 8.9,
+    "image": "https://images.pexels.com/photos/3014237/pexels-photo-3014237.png?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Barbell Squat",
+    "muscleGroup": "quadriceps",
+    "equipment": "Barbell",
+    "rating": 8.9,
+    "image": "https://images.pexels.com/photos/1552106/pexels-photo-1552106.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Decline barbell bench press",
+    "muscleGroup": "chest",
+    "equipment": "Barbell",
+    "rating": 8.9,
+    "image": "https://images.pexels.com/photos/3837757/pexels-photo-3837757.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Dumbbell Bicep Curl",
+    "muscleGroup": "biceps",
+    "equipment": "Dumbbell",
+    "rating": 8.9,
+    "image": "https://images.pexels.com/photos/6455925/pexels-photo-6455925.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Dumbbell Goblet Squat",
+    "muscleGroup": "quadriceps",
+    "equipment": "Dumbbell",
+    "rating": 8.9,
+    "image": "https://images.pexels.com/photos/13197535/pexels-photo-13197535.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Dumbbell squat",
+    "muscleGroup": "quadriceps",
+    "equipment": "Dumbbell",
+    "rating": 8.9,
+    "image": "https://images.pexels.com/photos/13197535/pexels-photo-13197535.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Barbell front squat",
+    "muscleGroup": "quadriceps",
+    "equipment": "Barbell",
+    "rating": 8.9,
+    "image": "https://images.pexels.com/photos/1552106/pexels-photo-1552106.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Close-grip pull-down",
+    "muscleGroup": "lats",
+    "equipment": "Cable",
+    "rating": 8.9,
+    "image": "https://images.pexels.com/photos/791764/pexels-photo-791764.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Triceps Pushdown - Rope Attachment",
+    "muscleGroup": "triceps",
+    "equipment": "Cables",
+    "rating": 8.9,
+    "image": "https://images.pexels.com/photos/3839053/pexels-photo-3839053.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Side-to-side box skip",
+    "muscleGroup": "quadriceps",
+    "equipment": "Body Only",
+    "rating": 8.9,
+    "image": "https://images.pexels.com/photos/2294403/pexels-photo-2294403.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Smith machine shoulder press",
+    "muscleGroup": "shoulders",
+    "equipment": "Machine",
+    "rating": 8.9,
+    "image": "https://images.pexels.com/photos/3837297/pexels-photo-3837297.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Seated triceps press",
+    "muscleGroup": "triceps",
+    "equipment": "Dumbbell",
+    "rating": 8.9,
+    "image": "https://images.pexels.com/photos/7289239/pexels-photo-7289239.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Dumbbell Lying Supination",
+    "muscleGroup": "forearms",
+    "equipment": "Unknown",
+    "rating": 8.9,
+    "image": "https://images.pexels.com/photos/7289245/pexels-photo-7289245.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Pull-up",
+    "muscleGroup": "lats",
+    "equipment": "Body Only",
+    "rating": 8.9,
+    "image": "https://images.pexels.com/photos/6539785/pexels-photo-6539785.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Wide-grip bench press",
+    "muscleGroup": "chest",
+    "equipment": "Barbell",
+    "rating": 8.9,
+    "image": "https://images.pexels.com/photos/3837757/pexels-photo-3837757.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Close-grip EZ-bar curl",
+    "muscleGroup": "biceps",
+    "equipment": "Barbell",
+    "rating": 8.9,
+    "image": "https://images.pexels.com/photos/6388370/pexels-photo-6388370.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "T-Bar Row",
+    "muscleGroup": "middle back",
+    "equipment": "Other",
+    "rating": 8.9,
+    "image": "https://images.pexels.com/photos/7031706/pexels-photo-7031706.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Bent Over Two-Arm Long Bar Row",
+    "muscleGroup": "middle back",
+    "equipment": "Barbell",
+    "rating": 8.9,
+    "image": "https://images.pexels.com/photos/6539841/pexels-photo-6539841.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Muscle Up",
+    "muscleGroup": "lats",
+    "equipment": "Body Only",
+    "rating": 8.9,
+    "image": "https://images.pexels.com/photos/4754001/pexels-photo-4754001.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Machine shoulder press",
+    "muscleGroup": "shoulders",
+    "equipment": "Machine",
+    "rating": 8.9,
+    "image": "https://images.pexels.com/photos/3837297/pexels-photo-3837297.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Incline EZ-bar skullcrusher",
+    "muscleGroup": "triceps",
+    "equipment": "Barbell",
+    "rating": 8.9,
+    "image": "https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Alternating sit-through with crunch",
+    "muscleGroup": "middle back",
+    "equipment": "Other",
+    "rating": 8.9,
+    "image": "https://images.pexels.com/photos/6455815/pexels-photo-6455815.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Wide-Grip Decline Barbell Bench Press",
+    "muscleGroup": "chest",
+    "equipment": "Barbell",
+    "rating": 8.9,
+    "image": "https://images.pexels.com/photos/3837757/pexels-photo-3837757.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Rower",
+    "muscleGroup": "middle back",
+    "equipment": "Machine",
+    "rating": 8.9,
+    "image": "https://images.pexels.com/photos/6389869/pexels-photo-6389869.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Snatch Deadlift",
+    "muscleGroup": "hamstrings",
+    "equipment": "Barbell",
+    "rating": 8.9,
+    "image": "https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Front Plate Raise",
+    "muscleGroup": "shoulders",
+    "equipment": "Other",
+    "rating": 8.9,
+    "image": "https://images.pexels.com/photos/6388453/pexels-photo-6388453.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Decline Close-Grip Bench To Skull Crusher",
+    "muscleGroup": "triceps",
+    "equipment": "Barbell",
+    "rating": 8.9,
+    "image": "https://images.pexels.com/photos/5037320/pexels-photo-5037320.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Lying Leg Curls",
+    "muscleGroup": "hamstrings",
+    "equipment": "Machine",
+    "rating": 8.9,
+    "image": "https://images.pexels.com/photos/4047246/pexels-photo-4047246.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Cross-body hammer curl",
+    "muscleGroup": "biceps",
+    "equipment": "Dumbbell",
+    "rating": 8.9,
+    "image": "https://images.pexels.com/photos/6455925/pexels-photo-6455925.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Shotgun row",
+    "muscleGroup": "lats",
+    "equipment": "Cable",
+    "rating": 8.9,
+    "image": "https://images.pexels.com/photos/7031706/pexels-photo-7031706.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Ab Roller",
+    "muscleGroup": "abdominals",
+    "equipment": "Other",
+    "rating": 8.9,
+    "image": null
+  },
+  {
+    "name": "Reverse-grip incline dumbbell bench press",
+    "muscleGroup": "chest",
+    "equipment": "Dumbbell",
+    "rating": 8.9,
+    "image": null
+  },
+  {
+    "name": "Leg Press",
+    "muscleGroup": "quadriceps",
+    "equipment": "Machine",
+    "rating": 8.8,
+    "image": null
+  },
+  {
+    "name": "Stiff-Legged Dumbbell Deadlift",
+    "muscleGroup": "hamstrings",
+    "equipment": "Dumbbell",
+    "rating": 8.8,
+    "image": null
+  },
+  {
+    "name": "Cable Crossover",
+    "muscleGroup": "chest",
+    "equipment": "Cable",
+    "rating": 8.8,
+    "image": null
+  },
+  {
+    "name": "Barbell Incline Bench Press Medium-Grip",
+    "muscleGroup": "chest",
+    "equipment": "Barbell",
+    "rating": 8.8,
+    "image": null
+  },
+  {
+    "name": "Incline Dumbbell Flyes",
+    "muscleGroup": "chest",
+    "equipment": "Dumbbell",
+    "rating": 8.8,
+    "image": null
+  },
+  {
+    "name": "Seated Cable Rows",
+    "muscleGroup": "middle back",
+    "equipment": "Cable",
+    "rating": 8.8,
+    "image": null
+  },
+  {
+    "name": "Tricep Dumbbell Kickback",
+    "muscleGroup": "triceps",
+    "equipment": "Dumbbell",
+    "rating": 8.8,
+    "image": null
+  },
+  {
+    "name": "Otis-Up",
+    "muscleGroup": "abdominals",
+    "equipment": "Other",
+    "rating": 8.8,
+    "image": null
+  },
+  {
+    "name": "Mountain climber",
+    "muscleGroup": "abdominals",
+    "equipment": "Body Only",
+    "rating": 8.8,
+    "image": null
+  },
+  {
+    "name": "Ab bicycle",
+    "muscleGroup": "abdominals",
+    "equipment": "Body Only",
+    "rating": 8.8,
+    "image": null
+  },
+  {
+    "name": "Barbell forward lunge",
+    "muscleGroup": "quadriceps",
+    "equipment": "Barbell",
+    "rating": 8.8,
+    "image": null
+  },
+  {
+    "name": "3/4 sit-up",
+    "muscleGroup": "abdominals",
+    "equipment": "Body Only",
+    "rating": 8.8,
+    "image": null
+  },
+  {
+    "name": "Exercise ball leg curl",
+    "muscleGroup": "hamstrings",
+    "equipment": "Exercise Ball",
+    "rating": 8.8,
+    "image": null
+  },
+  {
+    "name": "Glute bridge",
+    "muscleGroup": "glutes",
+    "equipment": "Body Only",
+    "rating": 8.8,
+    "image": null
+  },
+  {
+    "name": "Close-Grip Front Lat Pulldown",
+    "muscleGroup": "lats",
+    "equipment": "Cable",
+    "rating": 8.8,
+    "image": null
+  },
+  {
+    "name": "Dip Machine",
+    "muscleGroup": "triceps",
+    "equipment": "Cable",
+    "rating": 8.8,
+    "image": null
+  },
+  {
+    "name": "Incline dumbbell row",
+    "muscleGroup": "middle back",
+    "equipment": "Dumbbell",
+    "rating": 8.8,
+    "image": null
+  },
+  {
+    "name": "Dumbbell Lunges",
+    "muscleGroup": "quadriceps",
+    "equipment": "Dumbbell",
+    "rating": 8.8,
+    "image": null
+  },
+  {
+    "name": "Single-arm standing shoulder press",
+    "muscleGroup": "shoulders",
+    "equipment": "Dumbbell",
+    "rating": 8.8,
+    "image": null
+  },
+  {
+    "name": "Preacher Curl",
+    "muscleGroup": "biceps",
+    "equipment": "Barbell",
+    "rating": 8.8,
+    "image": null
+  },
+  {
+    "name": "Reverse crunch",
+    "muscleGroup": "abdominals",
+    "equipment": "Body Only",
+    "rating": 8.8,
+    "image": null
+  },
+  {
+    "name": "Standing Dumbbell Triceps Extension",
+    "muscleGroup": "triceps",
+    "equipment": "Dumbbell",
+    "rating": 8.8,
+    "image": "https://images.pexels.com/photos/18060235/pexels-photo-18060235.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Elliptical trainer",
+    "muscleGroup": "quadriceps",
+    "equipment": "Machine",
+    "rating": 8.8,
+    "image": null
+  },
+  {
+    "name": "Bodyweight squat",
+    "muscleGroup": "quadriceps",
+    "equipment": "Body Only",
+    "rating": 8.8,
+    "image": null
+  },
+  {
+    "name": "Bent Over Two-Dumbbell Row With Palms In",
+    "muscleGroup": "middle back",
+    "equipment": "Dumbbell",
+    "rating": 8.8,
+    "image": null
+  },
+  {
+    "name": "Hex-bar deadlift",
+    "muscleGroup": "quadriceps",
+    "equipment": "Other",
+    "rating": 8.8,
+    "image": null
+  },
+  {
+    "name": "Narrow-stance leg press",
+    "muscleGroup": "quadriceps",
+    "equipment": "Machine",
+    "rating": 8.8,
+    "image": null
+  },
+  {
+    "name": "Single-leg glute bridge",
+    "muscleGroup": "glutes",
+    "equipment": "Body Only",
+    "rating": 8.8,
+    "image": null
+  },
+  {
+    "name": "Barbell Curls Lying Against An Incline",
+    "muscleGroup": "biceps",
+    "equipment": "Barbell",
+    "rating": 8.8,
+    "image": null
+  },
+  {
+    "name": "Standing Hip Circles",
+    "muscleGroup": "abductors",
+    "equipment": "Body Only",
+    "rating": 8.8,
+    "image": null
+  },
+  {
+    "name": "Clam",
+    "muscleGroup": "abductors",
+    "equipment": "Unknown",
+    "rating": 8.8,
+    "image": null
+  },
+  {
+    "name": "Narrow Stance Hack Squats",
+    "muscleGroup": "quadriceps",
+    "equipment": "Machine",
+    "rating": 8.8,
+    "image": null
+  },
+  {
+    "name": "Seated Close-Grip Concentration Barbell Curl",
+    "muscleGroup": "biceps",
+    "equipment": "Barbell",
+    "rating": 8.8,
+    "image": null
+  },
+  {
+    "name": "Dumbbell Lying Pronation",
+    "muscleGroup": "forearms",
+    "equipment": "Unknown",
+    "rating": 8.8,
+    "image": null
+  },
+  {
+    "name": "Smith machine box squat",
+    "muscleGroup": "quadriceps",
+    "equipment": "Barbell",
+    "rating": 8.8,
+    "image": null
+  },
+  {
+    "name": "Drop Push",
+    "muscleGroup": "chest",
+    "equipment": "Other",
+    "rating": 8.8,
+    "image": null
+  },
+  {
+    "name": "Upside-down pull-up",
+    "muscleGroup": "middle back",
+    "equipment": "Other",
+    "rating": 8.8,
+    "image": null
+  },
+  {
+    "name": "Reverse Barbell Preacher Curls",
+    "muscleGroup": "biceps",
+    "equipment": "E-Z Curl Bar",
+    "rating": 8.8,
+    "image": null
+  },
+  {
+    "name": "Close-grip EZ-bar bench press",
+    "muscleGroup": "chest",
+    "equipment": "E-Z Curl Bar",
+    "rating": 8.8,
+    "image": null
+  },
+  {
+    "name": "Incline Push-Up",
+    "muscleGroup": "chest",
+    "equipment": "Body Only",
+    "rating": 8.8,
+    "image": null
+  },
+  {
+    "name": "Hyperextensions With No Hyperextension Bench",
+    "muscleGroup": "lower back",
+    "equipment": "Body Only",
+    "rating": 8.8,
+    "image": null
+  },
+  {
+    "name": "Dumbbell front raise",
+    "muscleGroup": "shoulders",
+    "equipment": "Dumbbell",
+    "rating": 8.8,
+    "image": null
+  },
+  {
+    "name": "Parallel Bar Dip",
+    "muscleGroup": "triceps",
+    "equipment": "Body Only",
+    "rating": 8.8,
+    "image": null
+  },
+  {
+    "name": "Stairmaster",
+    "muscleGroup": "quadriceps",
+    "equipment": "Machine",
+    "rating": 8.8,
+    "image": null
+  },
+  {
+    "name": "Double Leg Butt Kick",
+    "muscleGroup": "quadriceps",
+    "equipment": "Unknown",
+    "rating": 8.8,
+    "image": null
+  },
+  {
+    "name": "Groiners",
+    "muscleGroup": "adductors",
+    "equipment": "Body Only",
+    "rating": 8.8,
+    "image": null
+  },
+  {
+    "name": "Neck Press",
+    "muscleGroup": "chest",
+    "equipment": "Barbell",
+    "rating": 8.8,
+    "image": null
+  },
+  {
+    "name": "Broad jump",
+    "muscleGroup": "quadriceps",
+    "equipment": "Body Only",
+    "rating": 8.8,
+    "image": null
+  },
+  {
+    "name": "Machine Squat",
+    "muscleGroup": "quadriceps",
+    "equipment": "Machine",
+    "rating": 8.8,
+    "image": null
+  },
+  {
+    "name": "V-bar pull-up",
+    "muscleGroup": "lats",
+    "equipment": "Unknown",
+    "rating": 8.8,
+    "image": null
+  },
+  {
+    "name": "Ring dip",
+    "muscleGroup": "triceps",
+    "equipment": "Body Only",
+    "rating": 8.8,
+    "image": null
+  },
+  {
+    "name": "Standing One-Arm Cable Curl",
+    "muscleGroup": "biceps",
+    "equipment": "Cable",
+    "rating": 8.8,
+    "image": null
+  },
+  {
+    "name": "Burpee",
+    "muscleGroup": "quadriceps",
+    "equipment": "Body Only",
+    "rating": 8.8,
+    "image": null
+  },
+  {
+    "name": "Double-arm triceps kick-back",
+    "muscleGroup": "triceps",
+    "equipment": "Dumbbell",
+    "rating": 8.8,
+    "image": null
+  },
+  {
+    "name": "Dumbbell reverse lunge",
+    "muscleGroup": "quadriceps",
+    "equipment": "Dumbbell",
+    "rating": 8.7,
+    "image": null
+  },
+  {
+    "name": "Seated Calf Raise",
+    "muscleGroup": "calves",
+    "equipment": "Machine",
+    "rating": 8.7,
+    "image": null
+  },
+  {
+    "name": "Standing dumbbell shrug",
+    "muscleGroup": "traps",
+    "equipment": "Dumbbell",
+    "rating": 8.7,
+    "image": null
+  },
+  {
+    "name": "Calf Press On The Leg Press Machine",
+    "muscleGroup": "calves",
+    "equipment": "Machine",
+    "rating": 8.7,
+    "image": null
+  },
+  {
+    "name": "Barbell step-up",
+    "muscleGroup": "quadriceps",
+    "equipment": "Barbell",
+    "rating": 8.7,
+    "image": null
+  },
+  {
+    "name": "Feet-elevated bench dip",
+    "muscleGroup": "triceps",
+    "equipment": "Body Only",
+    "rating": 8.7,
+    "image": null
+  },
+  {
+    "name": "Bent Over Barbell Row",
+    "muscleGroup": "middle back",
+    "equipment": "Barbell",
+    "rating": 8.7,
+    "image": null
+  },
+  {
+    "name": "Crunches",
+    "muscleGroup": "abdominals",
+    "equipment": "Body Only",
+    "rating": 8.7,
+    "image": null
+  },
+  {
+    "name": "Dumbbell Alternate Bicep Curl",
+    "muscleGroup": "biceps",
+    "equipment": "Dumbbell",
+    "rating": 8.7,
+    "image": null
+  },
+  {
+    "name": "Bent-over dumbbell rear delt row",
+    "muscleGroup": "shoulders",
+    "equipment": "Dumbbell",
+    "rating": 8.7,
+    "image": null
+  },
+  {
+    "name": "External Rotation with Cable",
+    "muscleGroup": "shoulders",
+    "equipment": "Cables",
+    "rating": 8.7,
+    "image": null
+  },
+  {
+    "name": "Handstand push-up",
+    "muscleGroup": "shoulders",
+    "equipment": "Body Only",
+    "rating": 8.7,
+    "image": null
+  },
+  {
+    "name": "Single-arm dumbbell preacher curl",
+    "muscleGroup": "biceps",
+    "equipment": "Dumbbell",
+    "rating": 8.7,
+    "image": null
+  },
+  {
+    "name": "Step-up with knee raise",
+    "muscleGroup": "glutes",
+    "equipment": "Body Only",
+    "rating": 8.7,
+    "image": null
+  },
+  {
+    "name": "Smith machine back squat",
+    "muscleGroup": "quadriceps",
+    "equipment": "Machine",
+    "rating": 8.7,
+    "image": null
+  },
+  {
+    "name": "Incline dumbbell front raise",
+    "muscleGroup": "shoulders",
+    "equipment": "Dumbbell",
+    "rating": 8.7,
+    "image": null
+  },
+  {
+    "name": "Alternate Incline Dumbbell Curl",
+    "muscleGroup": "biceps",
+    "equipment": "Dumbbell",
+    "rating": 8.7,
+    "image": null
+  },
+  {
+    "name": "Standing dumbbell upright row",
+    "muscleGroup": "traps",
+    "equipment": "Dumbbell",
+    "rating": 8.7,
+    "image": null
+  },
+  {
+    "name": "Single-arm cable front raise",
+    "muscleGroup": "shoulders",
+    "equipment": "Cable",
+    "rating": 8.7,
+    "image": null
+  },
+  {
+    "name": "Two-Arm Kettlebell Military Press",
+    "muscleGroup": "shoulders",
+    "equipment": "Kettlebells",
+    "rating": 8.7,
+    "image": null
+  },
+  {
+    "name": "Incline cable chest press",
+    "muscleGroup": "chest",
+    "equipment": "Cable",
+    "rating": 8.7,
+    "image": null
+  },
+  {
+    "name": "Rope climb",
+    "muscleGroup": "lats",
+    "equipment": "Body Only",
+    "rating": 8.7,
+    "image": null
+  },
+  {
+    "name": "Single-arm dumbbell preacher curl",
+    "muscleGroup": "biceps",
+    "equipment": "Dumbbell",
+    "rating": 8.7,
+    "image": null
+  },
+  {
+    "name": "Step-up with knee raise",
+    "muscleGroup": "glutes",
+    "equipment": "Body Only",
+    "rating": 8.7,
+    "image": null
+  },
+  {
+    "name": "Incline dumbbell front raise",
+    "muscleGroup": "shoulders",
+    "equipment": "Dumbbell",
+    "rating": 8.7,
+    "image": null
+  },
+  {
+    "name": "Rope climb",
+    "muscleGroup": "lats",
+    "equipment": "Body Only",
+    "rating": 8.7,
+    "image": null
+  },
+  {
+    "name": "Trail Running/Walking",
+    "muscleGroup": "quadriceps",
+    "equipment": "Body Only",
+    "rating": 8.7,
+    "image": null
+  },
+  {
+    "name": "Standing Bradford press",
+    "muscleGroup": "shoulders",
+    "equipment": "Barbell",
+    "rating": 8.7,
+    "image": null
+  },
+  {
+    "name": "Neutral-grip dumbbell bench press",
+    "muscleGroup": "chest",
+    "equipment": "Dumbbell",
+    "rating": 8.7,
+    "image": null
+  },
+  {
+    "name": "Cable Chest Press",
+    "muscleGroup": "chest",
+    "equipment": "Cable",
+    "rating": 8.7,
+    "image": null
+  },
+  {
+    "name": "Standing concentration curl",
+    "muscleGroup": "biceps",
+    "equipment": "Dumbbell",
+    "rating": 8.7,
+    "image": null
+  },
+  {
+    "name": "Wide-Grip Rear Pull-Up",
+    "muscleGroup": "lats",
+    "equipment": "Body Only",
+    "rating": 8.7,
+    "image": null
+  },
+  {
+    "name": "Kettlebell pass-through lunge",
+    "muscleGroup": "hamstrings",
+    "equipment": "Kettlebells",
+    "rating": 8.7,
+    "image": null
+  },
+  {
+    "name": "Hands-elevated push-up",
+    "muscleGroup": "chest",
+    "equipment": "Body Only",
+    "rating": 8.7,
+    "image": null
+  },
+  {
+    "name": "Deadlift with Bands",
+    "muscleGroup": "lower back",
+    "equipment": "Barbell",
+    "rating": 8.7,
+    "image": null
+  },
+  {
+    "name": "Straight-arm rope pull-down",
+    "muscleGroup": "lats",
+    "equipment": "Cable",
+    "rating": 8.7,
+    "image": null
+  },
+  {
+    "name": "Barbell Shoulder Press",
+    "muscleGroup": "shoulders",
+    "equipment": "Barbell",
+    "rating": 8.7,
+    "image": null
+  },
+  {
+    "name": "Power clean",
+    "muscleGroup": "hamstrings",
+    "equipment": "Barbell",
+    "rating": 8.7,
+    "image": null
+  },
+  {
+    "name": "Hang Snatch",
+    "muscleGroup": "hamstrings",
+    "equipment": "Barbell",
+    "rating": 8.7,
+    "image": null
+  },
+  {
+    "name": "Kettlebell sumo deadlift high pull",
+    "muscleGroup": "traps",
+    "equipment": "Kettlebells",
+    "rating": 8.7,
+    "image": null
+  },
+  {
+    "name": "Calf-Machine Shoulder Shrug",
+    "muscleGroup": "traps",
+    "equipment": "Machine",
+    "rating": 8.7,
+    "image": null
+  },
+  {
+    "name": "Bench Press - Powerlifting",
+    "muscleGroup": "triceps",
+    "equipment": "Barbell",
+    "rating": 8.7,
+    "image": null
+  },
+  {
+    "name": "Rocking Standing Calf Raise",
+    "muscleGroup": "calves",
+    "equipment": "Barbell",
+    "rating": 8.7,
+    "image": null
+  },
+  {
+    "name": "Goblet Squat",
+    "muscleGroup": "quadriceps",
+    "equipment": "Kettlebells",
+    "rating": 8.7,
+    "image": null
+  },
+  {
+    "name": "Behind-the-head skullcrusher",
+    "muscleGroup": "triceps",
+    "equipment": "Barbell",
+    "rating": 8.7,
+    "image": null
+  },
+  {
+    "name": "Seated palms-up wrist curl",
+    "muscleGroup": "forearms",
+    "equipment": "Barbell",
+    "rating": 8.7,
+    "image": null
+  },
+  {
+    "name": "Reverse Cable Curl",
+    "muscleGroup": "biceps",
+    "equipment": "Cable",
+    "rating": 8.7,
+    "image": null
+  },
+  {
+    "name": "Dumbbell side bend",
+    "muscleGroup": "abdominals",
+    "equipment": "Dumbbell",
+    "rating": 8.6,
+    "image": null
+  },
+  {
+    "name": "Lat pull-down",
+    "muscleGroup": "lats",
+    "equipment": "Cable",
+    "rating": 8.6,
+    "image": null
+  },
+  {
+    "name": "Side Lateral Raise",
+    "muscleGroup": "shoulders",
+    "equipment": "Dumbbell",
+    "rating": 8.6,
+    "image": null
+  },
+  {
+    "name": "Alternating incline dumbbell biceps curl",
+    "muscleGroup": "biceps",
+    "equipment": "Dumbbell",
+    "rating": 8.6,
+    "image": null
+  },
+  {
+    "name": "Kettlebell One-Legged Deadlift",
+    "muscleGroup": "hamstrings",
+    "equipment": "Kettlebells",
+    "rating": 8.6,
+    "image": null
+  },
+  {
+    "name": "Alternate Hammer Curl",
+    "muscleGroup": "biceps",
+    "equipment": "Dumbbell",
+    "rating": 8.6,
+    "image": null
+  },
+  {
+    "name": "Decline Push-Up",
+    "muscleGroup": "chest",
+    "equipment": "Body Only",
+    "rating": 8.6,
+    "image": null
+  },
+  {
+    "name": "Captain's chair knee raise",
+    "muscleGroup": "abdominals",
+    "equipment": "Other",
+    "rating": 8.6,
+    "image": null
+  },
+  {
+    "name": "Triceps Pushdown",
+    "muscleGroup": "triceps",
+    "equipment": "Cable",
+    "rating": 8.6,
+    "image": null
+  },
+  {
+    "name": "Low cable overhead triceps extension",
+    "muscleGroup": "triceps",
+    "equipment": "Cable",
+    "rating": 8.6,
+    "image": null
+  },
+  {
+    "name": "Single-arm cable cross-over",
+    "muscleGroup": "chest",
+    "equipment": "Cable",
+    "rating": 8.6,
+    "image": null
+  },
+  {
+    "name": "Seated dumbbell biceps curl",
+    "muscleGroup": "biceps",
+    "equipment": "Dumbbell",
+    "rating": 8.6,
+    "image": null
+  },
+  {
+    "name": "Battle ropes",
+    "muscleGroup": "shoulders",
+    "equipment": "Other",
+    "rating": 8.6,
+    "image": null
+  },
+  {
+    "name": "Dead bug reach",
+    "muscleGroup": "abdominals",
+    "equipment": "Body Only",
+    "rating": 8.6,
+    "image": null
+  },
+  {
+    "name": "Deadlift with Chains",
+    "muscleGroup": "lower back",
+    "equipment": "Barbell",
+    "rating": 8.6,
+    "image": null
+  },
+  {
+    "name": "Rope Crunch",
+    "muscleGroup": "abdominals",
+    "equipment": "Cable",
+    "rating": 8.6,
+    "image": null
+  },
+  {
+    "name": "Palms-Up Dumbbell Wrist Curl Over A Bench",
+    "muscleGroup": "forearms",
+    "equipment": "Dumbbell",
+    "rating": 8.6,
+    "image": "https://images.pexels.com/photos/6455925/pexels-photo-6455925.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Kettlebell thruster",
+    "muscleGroup": "glutes",
+    "equipment": "Kettlebells",
+    "rating": 8.6,
+    "image": null
+  },
+  {
+    "name": "Single-Arm Push-Up",
+    "muscleGroup": "chest",
+    "equipment": "Body Only",
+    "rating": 8.6,
+    "image": null
+  },
+  {
+    "name": "Band Hip Adductions",
+    "muscleGroup": "adductors",
+    "equipment": "Bands",
+    "rating": 8.6,
+    "image": null
+  },
+  {
+    "name": "Single-arm kettlebell clean",
+    "muscleGroup": "hamstrings",
+    "equipment": "Kettlebells",
+    "rating": 8.6,
+    "image": null
+  },
+  {
+    "name": "Preacher Hammer Dumbbell Curl",
+    "muscleGroup": "biceps",
+    "equipment": "Dumbbell",
+    "rating": 8.6,
+    "image": null
+  },
+  {
+    "name": "Alternating Kettlebell Press",
+    "muscleGroup": "shoulders",
+    "equipment": "Kettlebells",
+    "rating": 8.6,
+    "image": null
+  },
+  {
+    "name": "Split Squat with Dumbbells",
+    "muscleGroup": "quadriceps",
+    "equipment": "Dumbbell",
+    "rating": 8.6,
+    "image": null
+  },
+  {
+    "name": "Standing One-Arm Dumbbell Curl Over Incline Bench",
+    "muscleGroup": "biceps",
+    "equipment": "Unknown",
+    "rating": 8.6,
+    "image": null
+  },
+  {
+    "name": "Standing Olympic Plate Hand Squeeze",
+    "muscleGroup": "forearms",
+    "equipment": "Other",
+    "rating": 8.6,
+    "image": null
+  },
+  {
+    "name": "Sledgehammer swing",
+    "muscleGroup": "abdominals",
+    "equipment": "Other",
+    "rating": 8.6,
+    "image": null
+  },
+  {
+    "name": "Kneeling Squat",
+    "muscleGroup": "glutes",
+    "equipment": "Barbell",
+    "rating": 8.6,
+    "image": null
+  },
+  {
+    "name": "Single-arm kettlebell snatch",
+    "muscleGroup": "shoulders",
+    "equipment": "Kettlebells",
+    "rating": 8.6,
+    "image": null
+  },
+  {
+    "name": "Close-grip barbell curl",
+    "muscleGroup": "biceps",
+    "equipment": "Barbell",
+    "rating": 8.6,
+    "image": null
+  },
+  {
+    "name": "Box jump",
+    "muscleGroup": "hamstrings",
+    "equipment": "Other",
+    "rating": 8.6,
+    "image": null
+  },
+  {
+    "name": "Standing cable crunch",
+    "muscleGroup": "abdominals",
+    "equipment": "Cable",
+    "rating": 8.6,
+    "image": null
+  },
+  {
+    "name": "Leverage Incline Chest Press",
+    "muscleGroup": "chest",
+    "equipment": "Machine",
+    "rating": 8.6,
+    "image": null
+  },
+  {
+    "name": "Standing barbell overhead triceps extension",
+    "muscleGroup": "triceps",
+    "equipment": "Barbell",
+    "rating": 8.6,
+    "image": null
+  },
+  {
+    "name": "Lying cable triceps extension",
+    "muscleGroup": "triceps",
+    "equipment": "Cable",
+    "rating": 8.6,
+    "image": null
+  },
+  {
+    "name": "Kettlebell Turkish Get-Up (Squat style)",
+    "muscleGroup": "shoulders",
+    "equipment": "Unknown",
+    "rating": 8.6,
+    "image": null
+  },
+  {
+    "name": "Crunch - Hands Overhead",
+    "muscleGroup": "abdominals",
+    "equipment": "Body Only",
+    "rating": 8.6,
+    "image": null
+  },
+  {
+    "name": "Cable Internal Rotation",
+    "muscleGroup": "shoulders",
+    "equipment": "Cable",
+    "rating": 8.6,
+    "image": null
+  },
+  {
+    "name": "Leg Extensions",
+    "muscleGroup": "quadriceps",
+    "equipment": "Machine",
+    "rating": 8.5,
+    "image": null
+  },
+  {
+    "name": "Standing One-Arm Dumbbell Curl Over Incline Bench",
+    "muscleGroup": "biceps",
+    "equipment": "Unknown",
+    "rating": 8.6,
+    "image": null
+  },
+  {
+    "name": "Standing Olympic Plate Hand Squeeze",
+    "muscleGroup": "forearms",
+    "equipment": "Other",
+    "rating": 8.6,
+    "image": null
+  },
+  {
+    "name": "Sledgehammer swing",
+    "muscleGroup": "abdominals",
+    "equipment": "Other",
+    "rating": 8.6,
+    "image": null
+  },
+  {
+    "name": "Single-arm kettlebell snatch",
+    "muscleGroup": "shoulders",
+    "equipment": "Kettlebells",
+    "rating": 8.6,
+    "image": null
+  },
+  {
+    "name": "Box jump",
+    "muscleGroup": "hamstrings",
+    "equipment": "Other",
+    "rating": 8.6,
+    "image": null
+  },
+  {
+    "name": "Standing cable crunch",
+    "muscleGroup": "abdominals",
+    "equipment": "Cable",
+    "rating": 8.6,
+    "image": null
+  },
+  {
+    "name": "Standing barbell overhead triceps extension",
+    "muscleGroup": "triceps",
+    "equipment": "Barbell",
+    "rating": 8.6,
+    "image": null
+  },
+  {
+    "name": "Lying cable triceps extension",
+    "muscleGroup": "triceps",
+    "equipment": "Cable",
+    "rating": 8.6,
+    "image": null
+  },
+  {
+    "name": "Close push-up to wide push-up",
+    "muscleGroup": "chest",
+    "equipment": "Body Only",
+    "rating": 8.5,
+    "image": null
+  },
+  {
+    "name": "Single-arm dumbbell triceps extension",
+    "muscleGroup": "triceps",
+    "equipment": "Dumbbell",
+    "rating": 8.5,
+    "image": null
+  },
+  {
+    "name": "Butterfly",
+    "muscleGroup": "chest",
+    "equipment": "Machine",
+    "rating": 8.5,
+    "image": null
+  },
+  {
+    "name": "Decline dumbbell bench press",
+    "muscleGroup": "chest",
+    "equipment": "Dumbbell",
+    "rating": 8.5,
+    "image": null
+  },
+  {
+    "name": "V-up",
+    "muscleGroup": "abdominals",
+    "equipment": "Body Only",
+    "rating": 8.5,
+    "image": null
+  },
+  {
+    "name": "Seated face pull",
+    "muscleGroup": "shoulders",
+    "equipment": "Cable",
+    "rating": 8.5,
+    "image": null
+  },
+  {
+    "name": "Barbell Bulgarian split squat",
+    "muscleGroup": "quadriceps",
+    "equipment": "Barbell",
+    "rating": 8.5,
+    "image": null
+  },
+  {
+    "name": "Reverse-grip lat pull-down",
+    "muscleGroup": "lats",
+    "equipment": "Machine",
+    "rating": 8.5,
+    "image": null
+  },
+  {
+    "name": "Standing Biceps Cable Curl",
+    "muscleGroup": "biceps",
+    "equipment": "Cable",
+    "rating": 8.5,
+    "image": null
+  },
+  {
+    "name": "Single-arm cable seated row",
+    "muscleGroup": "middle back",
+    "equipment": "Cable",
+    "rating": 8.5,
+    "image": null
+  },
+  {
+    "name": "Single-arm kettlebell row",
+    "muscleGroup": "chest",
+    "equipment": "Dumbbell",
+    "rating": 8.5,
+    "image": null
+  },
+  {
+    "name": "Scissors Jump",
+    "muscleGroup": "quadriceps",
+    "equipment": "Body Only",
+    "rating": 8.5,
+    "image": null
+  },
+  {
+    "name": "Wide Stance Stiff Legs",
+    "muscleGroup": "hamstrings",
+    "equipment": "Barbell",
+    "rating": 8.5,
+    "image": null
+  },
+  {
+    "name": "Rack Pull with Bands",
+    "muscleGroup": "lower back",
+    "equipment": "Barbell",
+    "rating": 8.5,
+    "image": null
+  },
+  {
+    "name": "Drag curl",
+    "muscleGroup": "biceps",
+    "equipment": "Barbell",
+    "rating": 8.5,
+    "image": null
+  },
+  {
+    "name": "Close push-up to wide push-up",
+    "muscleGroup": "chest",
+    "equipment": "Body Only",
+    "rating": 8.5,
+    "image": null
+  },
+  {
+    "name": "Single-arm dumbbell triceps extension",
+    "muscleGroup": "triceps",
+    "equipment": "Dumbbell",
+    "rating": 8.5,
+    "image": null
+  },
+  {
+    "name": "Butterfly",
+    "muscleGroup": "chest",
+    "equipment": "Machine",
+    "rating": 8.5,
+    "image": null
+  },
+  {
+    "name": "Seated face pull",
+    "muscleGroup": "shoulders",
+    "equipment": "Cable",
+    "rating": 8.5,
+    "image": null
+  },
+  {
+    "name": "Rack Pull with Bands",
+    "muscleGroup": "lower back",
+    "equipment": "Barbell",
+    "rating": 8.5,
+    "image": null
+  },
+  {
+    "name": "Drag curl",
+    "muscleGroup": "biceps",
+    "equipment": "Barbell",
+    "rating": 8.5,
+    "image": null
+  },
+  {
+    "name": "Hang Clean - Below the Knees",
+    "muscleGroup": "quadriceps",
+    "equipment": "Barbell",
+    "rating": 8.5,
+    "image": null
+  },
+  {
+    "name": "Decline oblique crunch",
+    "muscleGroup": "abdominals",
+    "equipment": "None",
+    "rating": 8.5,
+    "image": null
+  },
+  {
+    "name": "Dumbbell external shoulder rotation",
+    "muscleGroup": "shoulders",
+    "equipment": "Dumbbell",
+    "rating": 8.5,
+    "image": null
+  },
+  {
+    "name": "Single-arm bent-over cable rear delt fly",
+    "muscleGroup": "shoulders",
+    "equipment": "Cable",
+    "rating": 8.5,
+    "image": null
+  },
+  {
+    "name": "Clean",
+    "muscleGroup": "hamstrings",
+    "equipment": "Barbell",
+    "rating": 8.5,
+    "image": null
+  },
+  {
+    "name": "Single-arm incline lateral raise",
+    "muscleGroup": "shoulders",
+    "equipment": "Dumbbell",
+    "rating": 8.5,
+    "image": null
+  },
+  {
+    "name": "Decline bar press sit-up",
+    "muscleGroup": "abdominals",
+    "equipment": "Barbell",
+    "rating": 8.5,
+    "image": null
+  },
+  {
+    "name": "Barbell rear delt bent-over row",
+    "muscleGroup": "shoulders",
+    "equipment": "Barbell",
+    "rating": 8.5,
+    "image": null
+  },
+  {
+    "name": "Calf Press",
+    "muscleGroup": "calves",
+    "equipment": "Machine",
+    "rating": 8.5,
+    "image": null
+  },
+  {
+    "name": "Kettlebell alternating renegade row",
+    "muscleGroup": "middle back",
+    "equipment": "Kettlebells",
+    "rating": 8.5,
+    "image": null
+  },
+  {
+    "name": "Bosu Ball Cable Crunch With Side Bends",
+    "muscleGroup": "abdominals",
+    "equipment": "Cable",
+    "rating": 8.5,
+    "image": null
+  },
+  {
+    "name": "Stomach Vacuum",
+    "muscleGroup": "abdominals",
+    "equipment": "Body Only",
+    "rating": 8.5,
+    "image": null
+  },
+  {
+    "name": "Hammer Grip Incline DB Bench Press",
+    "muscleGroup": "chest",
+    "equipment": "Dumbbell",
+    "rating": 8.5,
+    "image": null
+  },
+  {
+    "name": "Wide-grip hands-elevated push-up",
+    "muscleGroup": "chest",
+    "equipment": "Body Only",
+    "rating": 8.5,
+    "image": null
+  },
+  {
+    "name": "Decline Dumbbell Triceps Extension",
+    "muscleGroup": "triceps",
+    "equipment": "Dumbbell",
+    "rating": 8.5,
+    "image": null
+  },
+  {
+    "name": "Jumping jack-",
+    "muscleGroup": "quadriceps",
+    "equipment": "Body Only",
+    "rating": 8.5,
+    "image": null
+  },
+  {
+    "name": "Push-Ups With Feet On An Exercise Ball",
+    "muscleGroup": "chest",
+    "equipment": "Body Only",
+    "rating": 8.5,
+    "image": null
+  },
+  {
+    "name": "Seated cable shoulder press",
+    "muscleGroup": "shoulders",
+    "equipment": "Cable",
+    "rating": 8.5,
+    "image": null
+  },
+  {
+    "name": "Barbell hack squat",
+    "muscleGroup": "quadriceps",
+    "equipment": "Barbell",
+    "rating": 8.5,
+    "image": null
+  },
+  {
+    "name": "Feet-elevated push-up",
+    "muscleGroup": "chest",
+    "equipment": "Body Only",
+    "rating": 8.5,
+    "image": null
+  },
+  {
+    "name": "Good Morning",
+    "muscleGroup": "hamstrings",
+    "equipment": "Barbell",
+    "rating": 8.5,
+    "image": null
+  },
+  {
+    "name": "Leverage Chest Press",
+    "muscleGroup": "chest",
+    "equipment": "Machine",
+    "rating": 8.5,
+    "image": null
+  },
+  {
+    "name": "Gironda Sternum Chins",
+    "muscleGroup": "lats",
+    "equipment": "Other",
+    "rating": 8.5,
+    "image": null
+  },
+  {
+    "name": "Exercise ball crunch",
+    "muscleGroup": "abdominals",
+    "equipment": "Exercise Ball",
+    "rating": 8.4,
+    "image": null
+  },
+  {
+    "name": "Seated rear delt fly",
+    "muscleGroup": "shoulders",
+    "equipment": "Dumbbell",
+    "rating": 8.4,
+    "image": null
+  },
+  {
+    "name": "Standing face pull",
+    "muscleGroup": "shoulders",
+    "equipment": "Cable",
+    "rating": 8.4,
+    "image": null
+  },
+  {
+    "name": "Glute Ham Raise",
+    "muscleGroup": "hamstrings",
+    "equipment": "Machine",
+    "rating": 8.4,
+    "image": null
+  },
+  {
+    "name": "Russian twist",
+    "muscleGroup": "abdominals",
+    "equipment": "Body Only",
+    "rating": 8.4,
+    "image": null
+  },
+  {
+    "name": "Seated Flat Bench Leg Pull-In",
+    "muscleGroup": "abdominals",
+    "equipment": "Weight Bench",
+    "rating": 8.4,
+    "image": null
+  },
+  {
+    "name": "Barbell shrug",
+    "muscleGroup": "traps",
+    "equipment": "Barbell",
+    "rating": 8.4,
+    "image": null
+  },
+  {
+    "name": "Seated Flat Bench Leg Pull-In",
+    "muscleGroup": "abdominals",
+    "equipment": "Weight Bench",
+    "rating": 8.4,
+    "image": null
+  },
+  {
+    "name": "Barbell shrug",
+    "muscleGroup": "traps",
+    "equipment": "Barbell",
+    "rating": 8.4,
+    "image": null
+  },
+  {
+    "name": "Standing cable rear delt row",
+    "muscleGroup": "shoulders",
+    "equipment": "Cable",
+    "rating": 8.4,
+    "image": null
+  },
+  {
+    "name": "Flat Bench Lying Leg Raise",
+    "muscleGroup": "abdominals",
+    "equipment": "Body Only",
+    "rating": 8.4,
+    "image": null
+  },
+  {
+    "name": "Hack Squat",
+    "muscleGroup": "quadriceps",
+    "equipment": "Barbell",
+    "rating": 8.4,
+    "image": null
+  },
+  {
+    "name": "Dumbbell skullcrusher",
+    "muscleGroup": "triceps",
+    "equipment": "Dumbbell",
+    "rating": 8.4,
+    "image": null
+  },
+  {
+    "name": "Man-maker",
+    "muscleGroup": "middle back",
+    "equipment": "Dumbbell",
+    "rating": 8.4,
+    "image": null
+  },
+  {
+    "name": "Pallof press",
+    "muscleGroup": "abdominals",
+    "equipment": "Other",
+    "rating": 8.4,
+    "image": null
+  },
+  {
+    "name": "Knees tucked crunch",
+    "muscleGroup": "abdominals",
+    "equipment": "Body Only",
+    "rating": 8.4,
+    "image": null
+  },
+  {
+    "name": "Straight-arm dumbbell pull-over",
+    "muscleGroup": "chest",
+    "equipment": "Dumbbell",
+    "rating": 8.4,
+    "image": null
+  },
+  {
+    "name": "Arms-crossed jump squat",
+    "muscleGroup": "quadriceps",
+    "equipment": "Body Only",
+    "rating": 8.4,
+    "image": null
+  },
+  {
+    "name": "Decline Smith Press",
+    "muscleGroup": "chest",
+    "equipment": "Machine",
+    "rating": 8.4,
+    "image": null
+  },
+  {
+    "name": "Band Skull Crusher",
+    "muscleGroup": "triceps",
+    "equipment": "Unknown",
+    "rating": 8.4,
+    "image": null
+  },
+  {
+    "name": "Side Wrist Pull",
+    "muscleGroup": "shoulders",
+    "equipment": "None",
+    "rating": 8.4,
+    "image": null
+  },
+  {
+    "name": "Isometric Wipers",
+    "muscleGroup": "chest",
+    "equipment": "Body Only",
+    "rating": 8.4,
+    "image": "https://images.pexels.com/photos/7479775/pexels-photo-7479775.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "name": "Skating",
+    "muscleGroup": "quadriceps",
+    "equipment": "Other",
+    "rating": 8.4,
+    "image": null
+  },
+  {
+    "name": "Cable cross-over",
+    "muscleGroup": "chest",
+    "equipment": "Cable",
+    "rating": 8.4,
+    "image": null
+  },
+  {
+    "name": "Treadmill running",
+    "muscleGroup": "quadriceps",
+    "equipment": "Machine",
+    "rating": 8.4,
+    "image": null
+  },
+  {
+    "name": "One Arm Pronated Dumbbell Triceps Extension",
+    "muscleGroup": "triceps",
+    "equipment": "Dumbbell",
+    "rating": 8.4,
+    "image": null
+  },
+  {
+    "name": "Single-arm kettlebell clean and jerk",
+    "muscleGroup": "shoulders",
+    "equipment": "Kettlebells",
+    "rating": 8.4,
+    "image": null
+  },
+  {
+    "name": "Side To Side Chins",
+    "muscleGroup": "lats",
+    "equipment": "Body Only",
+    "rating": 8.4,
+    "image": null
+  },
+  {
+    "name": "Incline Dumbbell Bench With Palms Facing In",
+    "muscleGroup": "chest",
+    "equipment": "Dumbbell",
+    "rating": 8.4,
+    "image": null
+  },
+  {
+    "name": "Seated palms-down wrist curl",
+    "muscleGroup": "forearms",
+    "equipment": "Dumbbell",
+    "rating": 8.4,
+    "image": null
+  },
+  {
+    "name": "Standing leg swing",
+    "muscleGroup": "hamstrings",
+    "equipment": "Body Only",
+    "rating": 8.4,
+    "image": null
+  },
+  {
+    "name": "Clock push-up",
+    "muscleGroup": "chest",
+    "equipment": "Body Only",
+    "rating": 8.4,
+    "image": null
+  },
+  {
+    "name": "Machine seated row",
+    "muscleGroup": "lats",
+    "equipment": "Machine",
+    "rating": 8.4,
+    "image": null
+  },
+  {
+    "name": "Lying Face Up Plate Neck Resistance",
+    "muscleGroup": "neck",
+    "equipment": "Other",
+    "rating": 8.4,
+    "image": null
+  },
+  {
+    "name": "Weighted sissy squat",
+    "muscleGroup": "quadriceps",
+    "equipment": "Other",
+    "rating": 8.4,
+    "image": null
+  },
+  {
+    "name": "Jog In Place",
+    "muscleGroup": "quadriceps",
+    "equipment": "Unknown",
+    "rating": 8.4,
+    "image": null
+  },
+  {
+    "name": "Dumbbell Raise",
+    "muscleGroup": "shoulders",
+    "equipment": "Dumbbell",
+    "rating": 8.4,
+    "image": null
+  },
+  {
+    "name": "Palms-Down Dumbbell Wrist Curl Over A Bench",
+    "muscleGroup": "forearms",
+    "equipment": "Dumbbell",
+    "rating": 8.4,
+    "image": null
+  },
+  {
+    "name": "One Arm Supinated Dumbbell Triceps Extension",
+    "muscleGroup": "triceps",
+    "equipment": "Dumbbell",
+    "rating": 8.4,
+    "image": null
+  },
+  {
+    "name": "Jog In Place",
+    "muscleGroup": "quadriceps",
+    "equipment": "Unknown",
+    "rating": 8.4,
+    "image": null
+  },
+  {
+    "name": "Dumbbell Raise",
+    "muscleGroup": "shoulders",
+    "equipment": "Dumbbell",
+    "rating": 8.4,
+    "image": null
+  },
+  {
+    "name": "Palms-Down Dumbbell Wrist Curl Over A Bench",
+    "muscleGroup": "forearms",
+    "equipment": "Dumbbell",
+    "rating": 8.4,
+    "image": null
+  },
+  {
+    "name": "One Arm Supinated Dumbbell Triceps Extension",
+    "muscleGroup": "triceps",
+    "equipment": "Dumbbell",
+    "rating": 8.4,
+    "image": null
+  },
+  {
+    "name": "Stationary bike",
+    "muscleGroup": "quadriceps",
+    "equipment": "Machine",
+    "rating": 8.3,
+    "image": null
+  },
+  {
+    "name": "Dumbbell bent-over row",
+    "muscleGroup": "middle back",
+    "equipment": "Dumbbell",
+    "rating": 8.3,
+    "image": null
+  },
+  {
+    "name": "Barbell thruster",
+    "muscleGroup": "quadriceps",
+    "equipment": "Barbell",
+    "rating": 8.3,
+    "image": null
+  },
+  {
+    "name": "Flutter Kicks",
+    "muscleGroup": "glutes",
+    "equipment": "Weight Bench",
+    "rating": 8.3,
+    "image": null
+  },
+  {
+    "name": "Dumbbell sumo squat",
+    "muscleGroup": "quadriceps",
+    "equipment": "Dumbbell",
+    "rating": 8.3,
+    "image": null
+  },
+  {
+    "name": "Barbell upright row",
+    "muscleGroup": "shoulders",
+    "equipment": "Barbell",
+    "rating": 8.3,
+    "image": null
+  },
+  {
+    "name": "Superman",
+    "muscleGroup": "lower back",
+    "equipment": "Body Only",
+    "rating": 8.3,
+    "image": null
+  },
+  {
+    "name": "Straight-Arm Pulldown",
+    "muscleGroup": "lats",
+    "equipment": "Cable",
+    "rating": 8.3,
+    "image": null
+  },
+  {
+    "name": "Barbell stiff-legged deadlift",
+    "muscleGroup": "hamstrings",
+    "equipment": "Barbell",
+    "rating": 8.3,
+    "image": null
+  },
+  {
+    "name": "Standing One-Arm Dumbbell Triceps Extension",
+    "muscleGroup": "triceps",
+    "equipment": "Dumbbells",
+    "rating": 8.3,
+    "image": null
+  },
+  {
+    "name": "Smith machine bench press",
+    "muscleGroup": "chest",
+    "equipment": "Machine",
+    "rating": 8.3,
+    "image": null
+  },
+  {
+    "name": "Seated Side Lateral Raise",
+    "muscleGroup": "shoulders",
+    "equipment": "Dumbbell",
+    "rating": 8.3,
+    "image": null
+  },
+  {
+    "name": "Dumbbell Lying Rear Lateral Raise",
+    "muscleGroup": "shoulders",
+    "equipment": "Dumbbell",
+    "rating": 8.3,
+    "image": null
+  },
+  {
+    "name": "Dumbbell preacher curl",
+    "muscleGroup": "biceps",
+    "equipment": "Dumbbell",
+    "rating": 8.3,
+    "image": null
+  },
+  {
+    "name": "Front Raise And Pullover",
+    "muscleGroup": "chest",
+    "equipment": "Barbell",
+    "rating": 8.3,
+    "image": null
+  },
+  {
+    "name": "Dumbbell seated box jump",
+    "muscleGroup": "quadriceps",
+    "equipment": "Dumbbell",
+    "rating": 8.3,
+    "image": null
+  },
+  {
+    "name": "Middle Back Shrug",
+    "muscleGroup": "middle back",
+    "equipment": "Dumbbell",
+    "rating": 8.3,
+    "image": null
+  },
+  {
+    "name": "Incline face-down bar front raise",
+    "muscleGroup": "shoulders",
+    "equipment": "E-Z Curl Bar",
+    "rating": 8.3,
+    "image": null
+  },
+  {
+    "name": "Butt-Ups",
+    "muscleGroup": "abdominals",
+    "equipment": "Body Only",
+    "rating": 8.3,
+    "image": null
+  },
+  {
+    "name": "Band Good Morning (Pull Through)",
+    "muscleGroup": "hamstrings",
+    "equipment": "Bands",
+    "rating": 8.3,
+    "image": null
+  },
+  {
+    "name": "Bodyweight Reverse Lunge",
+    "muscleGroup": "quadriceps",
+    "equipment": "Body Only",
+    "rating": 8.3,
+    "image": null
+  },
+  {
+    "name": "Seated One-Arm Dumbbell Palms-Down Wrist Curl",
+    "muscleGroup": "forearms",
+    "equipment": "Dumbbell",
+    "rating": 8.3,
+    "image": null
+  },
+  {
+    "name": "Glute Kickback",
+    "muscleGroup": "glutes",
+    "equipment": "Body Only",
+    "rating": 8.3,
+    "image": null
+  },
+  {
+    "name": "Treadmill jogging",
+    "muscleGroup": "quadriceps",
+    "equipment": "Machine",
+    "rating": 8.3,
+    "image": null
+  },
+  {
+    "name": "Plate Pinch",
+    "muscleGroup": "forearms",
+    "equipment": "Other",
+    "rating": 8.3,
+    "image": null
+  },
+  {
+    "name": "Yates Row Reverse Grip",
+    "muscleGroup": "middle back",
+    "equipment": "Barbell",
+    "rating": 8.3,
+    "image": null
+  },
+  {
+    "name": "Linear Acceleration Wall Drill",
+    "muscleGroup": "hamstrings",
+    "equipment": "Body Only",
+    "rating": 8.3,
+    "image": null
+  },
+  {
+    "name": "Reverse-grip bench press",
+    "muscleGroup": "triceps",
+    "equipment": "Barbell",
+    "rating": 8.3,
+    "image": null
+  },
+  {
+    "name": "Leverage Decline Chest Press",
+    "muscleGroup": "chest",
+    "equipment": "Machine",
+    "rating": 8.3,
+    "image": null
+  },
+  {
+    "name": "Chain Handle Extension",
+    "muscleGroup": "triceps",
+    "equipment": "Other",
+    "rating": 8.3,
+    "image": null
+  }
+]
