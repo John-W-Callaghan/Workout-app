@@ -7,3 +7,6 @@ export const store = configureStore({
     // You can add other slices here, like a 'muscles' slice
   },
 });
+
+// Infer the `RootState` type from the store itself
+export type RootState = ReturnType<typeof store.getState>;

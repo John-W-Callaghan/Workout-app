@@ -1,6 +1,8 @@
 import React from 'react';
-import AppNavigator from '../src/navigation/AppNavigation'; // Correct path
+import { View } from 'react-native';
 
-export default function App() {
-  return <AppNavigator />;
+export default function Index() {
+  // Your AppNavigator now controls what is shown on the home screen.
+  // This file just needs to exist, but it can be empty.
+  return <View />;
 }
