@@ -23,16 +23,16 @@ const workoutSlice = createSlice({
     },
     // Saves the finished workout to history and clears the active session
     finishWorkout: (state) => {
-    if (state.activeSession) {
-        // Create a final workout object with the correct date property
-        const finishedWorkout = {
-            ...state.activeSession,
-            date: state.activeSession.startTime, // Use the startTime as the final date
-        };
-        state.history.push(finishedWorkout);
-        state.activeSession = null;
-    }
-},
+      if (state.activeSession) {
+          // Create a final workout object with the correct date property
+          const finishedWorkout = {
+              ...state.activeSession,
+              date: state.activeSession.startTime, // Use the startTime as the final date
+          };
+          state.history.push(finishedWorkout);
+          state.activeSession = null;
+      }
+    },
     // Clears the session without saving
     cancelWorkout: (state) => {
       state.activeSession = null;
@@ -42,9 +42,17 @@ const workoutSlice = createSlice({
         if (state.activeSession) {
             state.activeSession.elapsedTime += 1;
         }
-    }
+    },
+    
+    // --- ADD THIS NEW REDUCER ---
+    deleteWorkout: (state, action) => {
+      // The 'action.payload' will be the ID of the workout to delete
+      state.history = state.history.filter(workout => workout.id !== action.payload);
+    },
   },
 });
 
-export const { startWorkout, updateActiveWorkout, finishWorkout, cancelWorkout, tickTimer } = workoutSlice.actions;
+// --- UPDATE THIS LINE to include deleteWorkout ---
+export const { startWorkout, updateActiveWorkout, finishWorkout, cancelWorkout, tickTimer, deleteWorkout } = workoutSlice.actions;
+
 export default workoutSlice.reducer;
