@@ -1,5 +1,5 @@
 import React, { useState, useLayoutEffect, useCallback, useEffect, useMemo, useRef } from 'react';
-import { View, Text, StyleSheet, FlatList, TouchableOpacity, TextInput, Alert, Keyboard } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, TextInput, Alert, Keyboard, FlatList } from 'react-native';
 import { useDispatch, useSelector } from 'react-redux';
 import { Icon, Button, Input } from 'react-native-elements';
 import { updateActiveWorkout, finishWorkout, cancelWorkout, tickTimer } from '../store/workoutSlice';
@@ -9,8 +9,8 @@ import allExercises from '../data/exercises.json';
 import { Swipeable } from 'react-native-gesture-handler';
 import DraggableFlatList from 'react-native-draggable-flatlist';
 
-// Memoized ExerciseLogger component with improved prop comparison
-const ExerciseLogger = React.memo(({
+// ExerciseLogger component
+const ExerciseLogger = ({
   exercise,
   exerciseIndex,
   onSetChange,
@@ -20,107 +20,77 @@ const ExerciseLogger = React.memo(({
   onRemoveSet,
   onSetReorder,
   previousSets,
+  drag,
+  isActive,
 }) => {
-  // Create stable references to prevent unnecessary re-renders
-  const exerciseId = exercise.id;
-  const exerciseName = exercise.name;
-  const exerciseNotes = exercise.notes;
-  const setsCount = exercise.sets.length;
-
-  // Memoize the delete action to prevent re-renders
-  const renderDeleteAction = useCallback((setIndex) => (
-    <TouchableOpacity
-      style={styles.deleteButton}
-      onPress={() => onRemoveSet(exerciseIndex, setIndex)}
-    >
+  const renderDeleteAction = (setIndex) => (
+    <TouchableOpacity style={styles.deleteButton} onPress={() => onRemoveSet(exerciseIndex, setIndex)}>
       <Icon name="trash" type="ionicon" color={COLORS.white} />
     </TouchableOpacity>
-  ), [exerciseIndex, onRemoveSet]);
+  );
 
-  // Memoize set item renderer with stable keys
-  const renderSetItem = useCallback(({ item: set, drag, isActive, getIndex }) => {
+  const renderSetItem = ({ item: set, drag: dragSet, isActive: isDragging, getIndex }) => {
     const setIndex = getIndex();
-    const prev = previousSets?.[setIndex] || null;
-    const setKey = `${exerciseId}-${setIndex}`;
+    const prev = previousSets ? previousSets[setIndex] : null;
     
     return (
-      <Swipeable
-        key={setKey}
-        renderRightActions={() => renderDeleteAction(setIndex)}
-        overshootRight={false}
-      >
-        <TouchableOpacity
-          onLongPress={drag}
-          disabled={isActive}
-          style={[styles.setRow, isActive && styles.draggingRow]}
+      <Swipeable renderRightActions={() => renderDeleteAction(setIndex)} overshootRight={false}>
+        <TouchableOpacity 
+          onLongPress={dragSet} 
+          disabled={isDragging} 
+          style={[styles.setRow, isDragging && styles.draggingRow]}
         >
-          <Icon
-            name="menu"
-            type="ionicon"
-            color={COLORS.border}
-            containerStyle={styles.dragHandle}
-          />
+          <Icon name="menu" type="ionicon" color={COLORS.border} containerStyle={{ marginRight: 15 }} />
           <Text style={styles.setText}>{setIndex + 1}</Text>
-          <Text style={styles.prevText}>
-            {prev ? `${prev.weight}kg x ${prev.reps}` : '—'}
-          </Text>
-          <TextInput
-            style={styles.inputText}
-            keyboardType="numeric"
-            value={set.weight?.toString() || ''}
-            onChangeText={(val) => onSetChange(exerciseIndex, setIndex, 'weight', val)}
-            placeholder="0"
-            returnKeyType="next"
-            selectTextOnFocus={true}
-            blurOnSubmit={false}
+          <Text style={styles.prevText}>{prev ? `${prev.weight}kg x ${prev.reps}` : '—'}</Text>
+          <TextInput 
+            style={styles.inputText} 
+            keyboardType="numeric" 
+            value={set.weight?.toString() || ''} 
+            onChangeText={(val) => onSetChange(exerciseIndex, setIndex, 'weight', val)} 
+            placeholder="0" 
           />
-          <TextInput
-            style={styles.inputText}
-            keyboardType="numeric"
-            value={set.reps?.toString() || ''}
-            onChangeText={(val) => onSetChange(exerciseIndex, setIndex, 'reps', val)}
-            placeholder="0"
-            returnKeyType="done"
-            selectTextOnFocus={true}
-            blurOnSubmit={false}
+          <TextInput 
+            style={styles.inputText} 
+            keyboardType="numeric" 
+            value={set.reps?.toString() || ''} 
+            onChangeText={(val) => onSetChange(exerciseIndex, setIndex, 'reps', val)} 
+            placeholder="0" 
           />
-          <TouchableOpacity
-            style={styles.checkboxContainer}
+          <TouchableOpacity 
+            style={styles.checkboxContainer} 
             onPress={() => onToggleComplete(exerciseIndex, setIndex)}
           >
-            <Icon
-              name={set.completed ? 'check-box' : 'check-box-outline-blank'}
-              type="material"
-              color={set.completed ? COLORS.primary : COLORS.border}
-              size={28}
+            <Icon 
+              name={set.completed ? 'check-box' : 'check-box-outline-blank'} 
+              type="material" 
+              color={set.completed ? COLORS.primary : COLORS.border} 
+              size={28} 
             />
           </TouchableOpacity>
         </TouchableOpacity>
       </Swipeable>
     );
-  }, [exerciseIndex, exerciseId, previousSets, onSetChange, onToggleComplete, renderDeleteAction]);
-
-  // Memoize drag end handler
-  const handleDragEnd = useCallback(({ data }) => {
-    onSetReorder(exerciseIndex, data);
-  }, [exerciseIndex, onSetReorder]);
-
-  // Memoize the draggable list key to prevent unnecessary re-renders
-  const draggableListKey = useMemo(() => `draggable-${exerciseId}-${setsCount}`, [exerciseId, setsCount]);
+  };
 
   return (
-    <View style={styles.exerciseContainer}>
-      <Text style={styles.exerciseName}>{exerciseName}</Text>
+    <TouchableOpacity 
+      onLongPress={drag} 
+      disabled={isActive} 
+      style={[styles.exerciseContainer, isActive && styles.draggingRow]}
+    >
+      <View style={styles.exerciseHeader}>
+        <Text style={styles.exerciseName}>{exercise.name}</Text>
+        <Icon name="menu" type="ionicon" color={COLORS.border} />
+      </View>
       <View style={styles.pinnedNoteContainer}>
         <Icon name="bookmark" type="ionicon" color="#F59E0B" size={16} />
         <TextInput
           style={styles.pinnedNoteInput}
           placeholder="Add a note for this exercise..."
           placeholderTextColor="#FBBF24"
-          value={exerciseNotes || ''}
+          value={exercise.notes || ''}
           onChangeText={(text) => onNoteChange(exerciseIndex, text)}
-          multiline
-          blurOnSubmit={false}
         />
       </View>
       <View style={styles.setRowHeader}>
@@ -131,201 +101,141 @@ const ExerciseLogger = React.memo(({
         <View style={{ width: 70 }} />
       </View>
       <DraggableFlatList
-        key={draggableListKey}
-        data={exercise.sets}
-        onDragEnd={handleDragEnd}
-        keyExtractor={(item, index) => `set-${exerciseId}-${index}`}
+        data={exercise.sets || []}
+        onDragEnd={({ data }) => onSetReorder(exerciseIndex, data)}
+        keyExtractor={(item, index) => `set-${exercise.id}-${index}`}
         renderItem={renderSetItem}
         scrollEnabled={false}
-        extraData={previousSets}
       />
-      <Button
-        title="+ Add Set"
-        buttonStyle={styles.addSetButton}
-        titleStyle={styles.addSetButtonTitle}
-        onPress={() => onAddSet(exerciseIndex)}
+      <Button 
+        title="+ Add Set" 
+        buttonStyle={styles.addSetButton} 
+        titleStyle={styles.addSetButtonTitle} 
+        onPress={() => onAddSet(exerciseIndex)} 
       />
-    </View>
+    </TouchableOpacity>
   );
-}, (prevProps, nextProps) => {
-  // Improved comparison function
-  const exerciseChanged = (
-    prevProps.exercise.id !== nextProps.exercise.id ||
-    prevProps.exercise.name !== nextProps.exercise.name ||
-    prevProps.exercise.notes !== nextProps.exercise.notes ||
-    prevProps.exercise.sets.length !== nextProps.exercise.sets.length ||
-    JSON.stringify(prevProps.exercise.sets) !== JSON.stringify(nextProps.exercise.sets)
-  );
-  
-  const previousSetsChanged = JSON.stringify(prevProps.previousSets) !== JSON.stringify(nextProps.previousSets);
-  
-  return !exerciseChanged && !previousSetsChanged && prevProps.exerciseIndex === nextProps.exerciseIndex;
-});
+};
 
 export default function LogWorkoutScreen({ navigation }) {
   const dispatch = useDispatch();
-  const activeSession = useSelector((state) => state.workouts.activeSession);
-  const workoutHistory = useSelector((state) => state.workouts.history);
+  const workoutHistory = useSelector(state => state.workouts.history);
+  const activeSession = useSelector(state => state.workouts.activeSession);
 
-  const [localWorkoutName, setLocalWorkoutName] = useState(activeSession?.name || '');
-  const [isSearching, setIsSearching] = useState(activeSession?.exercises.length === 0);
+  const [localWorkoutName, setLocalWorkoutName] = useState('New Workout');
+  const [isSearching, setIsSearching] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
-  
-  // Use refs to prevent stale closure issues
-  const activeSessionRef = useRef(activeSession);
-  const debounceTimeoutRef = useRef(null);
-  const updateTimeoutRef = useRef(null);
-  
+  const [isInitialized, setIsInitialized] = useState(false);
+
+  // Handle case where activeSession doesn't exist - show empty workout interface
+  const currentSession = activeSession || {
+    name: 'New Workout',
+    exercises: [],
+    elapsedTime: 0,
+    startTime: new Date().toISOString()
+  };
+
+  // Initialize state properly - this is the main fix
   useEffect(() => {
-    activeSessionRef.current = activeSession;
+    if (activeSession) {
+      setLocalWorkoutName(activeSession.name || 'New Workout');
+      // If there are no exercises, automatically start searching
+      if (activeSession.exercises?.length === 0) {
+        setIsSearching(true);
+      }
+      setIsInitialized(true);
+    } else {
+      // If no active session exists, we should still show the interface
+      // The parent component should have initialized an activeSession
+      setIsInitialized(true);
+      setIsSearching(true); // Start in search mode for new workouts
+    }
   }, [activeSession]);
 
-  if (!activeSession) {
-    return null;
-  }
-
-  // Fixed debouncing effect for workout name
+  // Timer effect - always run the effect, but conditionally set up the timer
   useEffect(() => {
-    if (activeSession && activeSession.name !== localWorkoutName) {
-      setLocalWorkoutName(activeSession.name);
+    let timer;
+    if (activeSession) {
+      timer = setInterval(() => {
+        dispatch(tickTimer());
+      }, 1000);
     }
-  }, [activeSession?.name]);
-
-  useEffect(() => {
-    if (debounceTimeoutRef.current) {
-      clearTimeout(debounceTimeoutRef.current);
-    }
-    
-    debounceTimeoutRef.current = setTimeout(() => {
-      const currentSession = activeSessionRef.current;
-      if (currentSession && currentSession.name !== localWorkoutName) {
-        dispatch(updateActiveWorkout({ name: localWorkoutName }));
-      }
-    }, 500);
-
     return () => {
-      if (debounceTimeoutRef.current) {
-        clearTimeout(debounceTimeoutRef.current);
+      if (timer) {
+        clearInterval(timer);
       }
     };
-  }, [localWorkoutName, dispatch]);
+  }, [dispatch, activeSession]);
 
-  // Timer effect with cleanup
-  useEffect(() => {
-    const timer = setInterval(() => {
-      dispatch(tickTimer());
-    }, 1000);
-    return () => clearInterval(timer);
-  }, [dispatch]);
-
-  // Debounced update function to reduce Redux dispatches
-  const debouncedUpdate = useCallback((updateData) => {
-    if (updateTimeoutRef.current) {
-      clearTimeout(updateTimeoutRef.current);
-    }
-    
-    updateTimeoutRef.current = setTimeout(() => {
-      dispatch(updateActiveWorkout(updateData));
-    }, 100); // Short delay to batch updates
-  }, [dispatch]);
-
-  // Optimized handlers with reduced Redux dispatches
+  // Simple handlers without complex optimizations
   const handleSetChange = useCallback((exIndex, setIndex, field, value) => {
     const sanitizedValue = value.replace(/[^0-9.]/g, '');
-    const currentSession = activeSessionRef.current;
+    const newExercises = [...(currentSession.exercises || [])];
     
-    if (!currentSession) return;
-    
-    const newExercises = [...currentSession.exercises];
-    newExercises[exIndex] = {
-      ...newExercises[exIndex],
-      sets: newExercises[exIndex].sets.map((set, idx) => 
-        idx === setIndex ? { ...set, [field]: sanitizedValue } : set
-      )
-    };
-    
-    // Use debounced update for text inputs to prevent focus loss
-    debouncedUpdate({ exercises: newExercises });
-  }, [debouncedUpdate]);
+    if (newExercises[exIndex] && newExercises[exIndex].sets[setIndex]) {
+      newExercises[exIndex].sets[setIndex] = {
+        ...newExercises[exIndex].sets[setIndex],
+        [field]: sanitizedValue
+      };
+      dispatch(updateActiveWorkout({ exercises: newExercises }));
+    }
+  }, [currentSession.exercises, dispatch]);
 
   const handleAddSet = useCallback((exIndex) => {
-    const currentSession = activeSessionRef.current;
-    if (!currentSession) return;
-    
-    const newExercises = [...currentSession.exercises];
-    newExercises[exIndex] = {
-      ...newExercises[exIndex],
-      sets: [...newExercises[exIndex].sets, { weight: '', reps: '', completed: false }]
-    };
-    
-    dispatch(updateActiveWorkout({ exercises: newExercises }));
-  }, [dispatch]);
+    const newExercises = [...(currentSession.exercises || [])];
+    if (newExercises[exIndex]) {
+      newExercises[exIndex].sets.push({ weight: '', reps: '', completed: false });
+      dispatch(updateActiveWorkout({ exercises: newExercises }));
+    }
+  }, [currentSession.exercises, dispatch]);
 
   const handleNoteChange = useCallback((exIndex, text) => {
-    const currentSession = activeSessionRef.current;
-    if (!currentSession) return;
-    
-    const newExercises = [...currentSession.exercises];
-    newExercises[exIndex] = { ...newExercises[exIndex], notes: text };
-    
-    // Use debounced update for notes to prevent focus loss
-    debouncedUpdate({ exercises: newExercises });
-  }, [debouncedUpdate]);
+    const newExercises = [...(currentSession.exercises || [])];
+    if (newExercises[exIndex]) {
+      newExercises[exIndex].notes = text;
+      dispatch(updateActiveWorkout({ exercises: newExercises }));
+    }
+  }, [currentSession.exercises, dispatch]);
 
   const handleToggleComplete = useCallback((exIndex, setIndex) => {
-    const currentSession = activeSessionRef.current;
-    if (!currentSession) return;
-    
-    const newExercises = [...currentSession.exercises];
-    const currentSet = newExercises[exIndex].sets[setIndex];
-    
-    newExercises[exIndex] = {
-      ...newExercises[exIndex],
-      sets: newExercises[exIndex].sets.map((set, idx) => 
-        idx === setIndex ? { ...set, completed: !currentSet.completed } : set
-      )
-    };
-    
-    dispatch(updateActiveWorkout({ exercises: newExercises }));
-    Keyboard.dismiss();
-  }, [dispatch]);
+    const newExercises = [...(currentSession.exercises || [])];
+    if (newExercises[exIndex] && newExercises[exIndex].sets[setIndex]) {
+      newExercises[exIndex].sets[setIndex].completed = !newExercises[exIndex].sets[setIndex].completed;
+      dispatch(updateActiveWorkout({ exercises: newExercises }));
+      Keyboard.dismiss();
+    }
+  }, [currentSession.exercises, dispatch]);
 
   const handleSetReorder = useCallback((exIndex, reorderedSets) => {
-    const currentSession = activeSessionRef.current;
-    if (!currentSession) return;
-    
-    const newExercises = [...currentSession.exercises];
-    newExercises[exIndex] = { ...newExercises[exIndex], sets: reorderedSets };
-    
-    dispatch(updateActiveWorkout({ exercises: newExercises }));
-  }, [dispatch]);
+    const newExercises = [...(currentSession.exercises || [])];
+    if (newExercises[exIndex]) {
+      newExercises[exIndex].sets = reorderedSets;
+      dispatch(updateActiveWorkout({ exercises: newExercises }));
+    }
+  }, [currentSession.exercises, dispatch]);
 
   const handleRemoveSet = useCallback((exIndex, setIndex) => {
-    const currentSession = activeSessionRef.current;
-    if (!currentSession) return;
-    
-    const currentExercise = currentSession.exercises[exIndex];
-    if (currentExercise.sets.length <= 1) {
+    const currentExercise = (currentSession.exercises || [])[exIndex];
+    if (!currentExercise || currentExercise.sets.length <= 1) {
       Alert.alert('Cannot delete', 'Each exercise must have at least one set.');
       return;
     }
-    
-    const newExercises = [...currentSession.exercises];
-    newExercises[exIndex] = {
-      ...newExercises[exIndex],
-      sets: newExercises[exIndex].sets.filter((_, idx) => idx !== setIndex)
-    };
-    
+
+    const newExercises = [...(currentSession.exercises || [])];
+    newExercises[exIndex].sets = newExercises[exIndex].sets.filter((_, idx) => idx !== setIndex);
     dispatch(updateActiveWorkout({ exercises: newExercises }));
+  }, [currentSession.exercises, dispatch]);
+
+  const handleExerciseReorder = useCallback(({ data }) => {
+    dispatch(updateActiveWorkout({ exercises: data }));
   }, [dispatch]);
 
   const handleFinishWorkout = useCallback(() => {
-    const currentSession = activeSessionRef.current;
-    if (!currentSession || currentSession.exercises.length === 0) {
+    if (!currentSession.exercises || currentSession.exercises.length === 0) {
       Alert.alert('Empty Workout', 'Add at least one exercise before finishing.');
       return;
     }
-    
+
     Alert.alert('Finish Workout?', 'Are you sure you want to finish and save this workout?', [
       { text: 'Cancel', style: 'cancel' },
       {
@@ -336,7 +246,7 @@ export default function LogWorkoutScreen({ navigation }) {
         },
       },
     ]);
-  }, [dispatch, navigation]);
+  }, [currentSession.exercises, dispatch, navigation]);
 
   const handleCancelWorkout = useCallback(() => {
     Alert.alert('Cancel Workout?', 'This will discard your current progress. Are you sure?', [
@@ -352,7 +262,13 @@ export default function LogWorkoutScreen({ navigation }) {
     ]);
   }, [dispatch, navigation]);
 
-  // Optimized filtered exercises with better performance
+  // Update workout name
+  const handleWorkoutNameChange = useCallback((text) => {
+    setLocalWorkoutName(text);
+    dispatch(updateActiveWorkout({ name: text }));
+  }, [dispatch]);
+
+  // Search exercises
   const filteredExercises = useMemo(() => {
     if (!searchTerm.trim()) return [];
     const lowerSearchTerm = searchTerm.toLowerCase();
@@ -362,50 +278,34 @@ export default function LogWorkoutScreen({ navigation }) {
   }, [searchTerm]);
 
   const handleSelectExercise = useCallback((exercise) => {
-    const currentSession = activeSessionRef.current;
-    if (!currentSession) return;
-    
     const newExercise = {
       id: Date.now() + Math.random(),
       name: exercise.name,
       notes: '',
       sets: [{ weight: '', reps: '', completed: false }],
     };
-    
-    const newExercises = [...currentSession.exercises, newExercise];
+
+    const newExercises = [...(currentSession.exercises || []), newExercise];
     dispatch(updateActiveWorkout({ exercises: newExercises }));
     setSearchTerm('');
     setIsSearching(false);
     Keyboard.dismiss();
-  }, [dispatch]);
+  }, [currentSession.exercises, dispatch]);
 
-  // Stable reference for exercises with previous performance
-  const exercisesWithPrevious = useMemo(() => {
-    return activeSession.exercises.map((exercise, index) => ({
-      id: exercise.id,
-      exercise,
-      previousSets: findPreviousPerformance(exercise.name, workoutHistory),
-      index
-    }));
-  }, [activeSession.exercises, workoutHistory]);
+  const renderSearchItem = useCallback(({ item }) => (
+    <TouchableOpacity
+      style={styles.searchItem}
+      onPress={() => handleSelectExercise(item)}
+    >
+      <Text style={styles.searchItemText}>{item.name}</Text>
+    </TouchableOpacity>
+  ), [handleSelectExercise]);
 
-  // Clean up timeouts on unmount
-  useEffect(() => {
-    return () => {
-      if (debounceTimeoutRef.current) {
-        clearTimeout(debounceTimeoutRef.current);
-      }
-      if (updateTimeoutRef.current) {
-        clearTimeout(updateTimeoutRef.current);
-      }
-    };
-  }, []);
-
-  // Header effect with proper cleanup
+  // Header effect
   useLayoutEffect(() => {
-    const minutes = Math.floor(activeSession.elapsedTime / 60).toString().padStart(2, '0');
-    const seconds = (activeSession.elapsedTime % 60).toString().padStart(2, '0');
-    
+    const minutes = Math.floor((currentSession.elapsedTime || 0) / 60).toString().padStart(2, '0');
+    const seconds = ((currentSession.elapsedTime || 0) % 60).toString().padStart(2, '0');
+
     navigation.setOptions({
       headerTitle: `Duration: ${minutes}:${seconds}`,
       headerTitleStyle: { color: COLORS.primary, fontWeight: 'bold' },
@@ -419,43 +319,28 @@ export default function LogWorkoutScreen({ navigation }) {
         />
       ),
     });
-  }, [navigation, activeSession.elapsedTime, handleFinishWorkout]);
+  }, [navigation, currentSession.elapsedTime, handleFinishWorkout]);
 
-  // Memoized render functions
-  const renderHeader = useCallback(() => (
+  // Don't show loading if we have an activeSession or if we've determined there isn't one
+  if (!isInitialized) {
+    return (
+      <View style={[styles.container, { justifyContent: 'center', alignItems: 'center' }]}>
+        <Text>Loading workout...</Text>
+      </View>
+    );
+  }
+
+  const renderHeader = () => (
     <TextInput
       style={styles.routineTitle}
       value={localWorkoutName}
-      onChangeText={setLocalWorkoutName}
+      onChangeText={handleWorkoutNameChange}
       placeholder="Enter workout name"
       blurOnSubmit={false}
     />
-  ), [localWorkoutName]);
+  );
 
-  const renderExercise = useCallback(({ item }) => (
-    <ExerciseLogger
-      exercise={item.exercise}
-      exerciseIndex={item.index}
-      onSetChange={handleSetChange}
-      onToggleComplete={handleToggleComplete}
-      onAddSet={handleAddSet}
-      onNoteChange={handleNoteChange}
-      onRemoveSet={handleRemoveSet}
-      onSetReorder={handleSetReorder}
-      previousSets={item.previousSets}
-    />
-  ), [handleSetChange, handleToggleComplete, handleAddSet, handleNoteChange, handleRemoveSet, handleSetReorder]);
-
-  const renderSearchItem = useCallback(({ item }) => (
-    <TouchableOpacity
-      style={styles.searchItem}
-      onPress={() => handleSelectExercise(item)}
-    >
-      <Text style={styles.searchItemText}>{item.name}</Text>
-    </TouchableOpacity>
-  ), [handleSelectExercise]);
-
-  const renderFooter = useCallback(() => (
+  const renderFooter = () => (
     <View style={styles.addExerciseContainer}>
       {isSearching && (
         <View style={styles.searchContainer}>
@@ -465,14 +350,17 @@ export default function LogWorkoutScreen({ navigation }) {
             onChangeText={setSearchTerm}
             leftIcon={<Icon name="search" size={20} color={COLORS.text} />}
             containerStyle={styles.searchInputContainer}
+            autoFocus={true}
           />
-          <FlatList
-            data={filteredExercises}
-            keyExtractor={(item) => item.name}
-            renderItem={renderSearchItem}
-            style={styles.searchResults}
-            keyboardShouldPersistTaps="handled"
-          />
+          {filteredExercises.length > 0 && (
+            <FlatList
+              data={filteredExercises}
+              keyExtractor={(item) => item.name}
+              renderItem={renderSearchItem}
+              style={styles.searchResults}
+              keyboardShouldPersistTaps="handled"
+            />
+          )}
         </View>
       )}
       <Button
@@ -488,30 +376,55 @@ export default function LogWorkoutScreen({ navigation }) {
         onPress={handleCancelWorkout}
       />
     </View>
-  ), [isSearching, searchTerm, filteredExercises, renderSearchItem, handleCancelWorkout]);
+  );
+
+  const renderExerciseItem = ({ item, index, drag, isActive }) => {
+    const previousSets = findPreviousPerformance(item.name, workoutHistory);
+    return (
+      <ExerciseLogger
+        exercise={item}
+        exerciseIndex={index}
+        onSetChange={handleSetChange}
+        onToggleComplete={handleToggleComplete}
+        onAddSet={handleAddSet}
+        onNoteChange={handleNoteChange}
+        onRemoveSet={handleRemoveSet}
+        onSetReorder={handleSetReorder}
+        previousSets={previousSets}
+        drag={drag}
+        isActive={isActive}
+      />
+    );
+  };
+
+  const renderEmptyComponent = () => (
+    <View style={styles.emptyContainer}>
+      <Icon name="fitness" type="ionicon" size={64} color={COLORS.border} />
+      <Text style={styles.emptyText}>No exercises added yet</Text>
+      <Text style={styles.emptySubtext}>Tap "Add Exercise" below to get started!</Text>
+    </View>
+  );
 
   return (
-    <FlatList
+    <DraggableFlatList
       style={styles.container}
-      data={exercisesWithPrevious}
-      keyExtractor={(item) => item.id.toString()}
+      data={currentSession.exercises || []}
+      onDragEnd={handleExerciseReorder}
+      keyExtractor={item => item.id?.toString() || Math.random().toString()}
       ListHeaderComponent={renderHeader}
-      renderItem={renderExercise}
+      renderItem={renderExerciseItem}
       ListFooterComponent={renderFooter}
+      ListEmptyComponent={renderEmptyComponent}
       keyboardShouldPersistTaps="handled"
-      removeClippedSubviews={false} // Disable to prevent focus issues
-      maxToRenderPerBatch={5}
-      windowSize={10}
-      getItemLayout={undefined} // Remove if you had this set
     />
   );
 }
 
 const styles = StyleSheet.create({
-  container: { 
-    flex: 1, 
-    backgroundColor: COLORS.white, 
-    paddingHorizontal: 16 
+  container: {
+    flex: 1,
+    backgroundColor: COLORS.white,
+    paddingHorizontal: 16
   },
   routineTitle: {
     fontSize: 28,
@@ -543,10 +456,10 @@ const styles = StyleSheet.create({
     padding: 10,
     marginBottom: 15,
   },
-  pinnedNoteInput: { 
-    flex: 1, 
-    marginLeft: 8, 
-    fontSize: 14, 
+  pinnedNoteInput: {
+    flex: 1,
+    marginLeft: 8,
+    fontSize: 14,
     color: '#CA8A04',
     minHeight: 20,
   },
@@ -574,9 +487,6 @@ const styles = StyleSheet.create({
     backgroundColor: COLORS.white,
     minHeight: 50,
   },
-  dragHandle: { 
-    marginRight: 15 
-  },
   setText: {
     fontSize: 16,
     fontWeight: '600',
@@ -585,11 +495,11 @@ const styles = StyleSheet.create({
     textAlign: 'left',
     marginLeft: -15,
   },
-  prevText: { 
-    fontSize: 14, 
-    color: '#8A8A8E', 
-    width: 70, 
-    textAlign: 'center' 
+  prevText: {
+    fontSize: 14,
+    color: '#8A8A8E',
+    width: 70,
+    textAlign: 'center'
   },
   inputText: {
     fontSize: 16,
@@ -614,12 +524,12 @@ const styles = StyleSheet.create({
     paddingVertical: 12,
     marginTop: 10,
   },
-  addSetButtonTitle: { 
-    color: COLORS.text, 
-    fontWeight: '600' 
+  addSetButtonTitle: {
+    color: COLORS.text,
+    fontWeight: '600'
   },
-  addExerciseContainer: { 
-    marginVertical: 20 
+  addExerciseContainer: {
+    marginVertical: 20
   },
   searchContainer: {
     marginBottom: 20,
@@ -650,8 +560,8 @@ const styles = StyleSheet.create({
     paddingVertical: 14,
     marginVertical: 8,
   },
-  primaryActionButtonTitle: { 
-    color: COLORS.white, 
+  primaryActionButtonTitle: {
+    color: COLORS.white,
     fontWeight: 'bold',
     fontSize: 16,
   },
@@ -661,18 +571,18 @@ const styles = StyleSheet.create({
     paddingVertical: 14,
     marginTop: 8,
   },
-  secondaryActionButtonTitle: { 
-    color: '#D32F2F', 
+  secondaryActionButtonTitle: {
+    color: '#D32F2F',
     fontWeight: 'bold',
     fontSize: 16,
   },
-  finishButton: { 
-    backgroundColor: '#10B981', 
+  finishButton: {
+    backgroundColor: '#10B981',
     borderRadius: 8,
     paddingHorizontal: 16,
   },
-  finishButtonTitle: { 
-    color: COLORS.white, 
+  finishButtonTitle: {
+    color: COLORS.white,
     fontWeight: 'bold',
   },
   deleteButton: {
@@ -692,5 +602,28 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.3,
     shadowRadius: 6,
     transform: [{ scale: 1.02 }],
+  },
+  exerciseHeader: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: 10,
+  },
+  emptyContainer: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingVertical: 60,
+  },
+  emptyText: {
+    fontSize: 18,
+    fontWeight: '600',
+    color: COLORS.text,
+    marginTop: 16,
+    marginBottom: 8,
+  },
+  emptySubtext: {
+    fontSize: 14,
+    color: '#8A8A8E',
+    textAlign: 'center',
   },
 });
