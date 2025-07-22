@@ -11,6 +11,7 @@ import LogWorkoutScreen from '../screens/LogWorkoutScreen';
 import ProgressScreen from '../screens/ProgressScreen';
 import WorkoutHubScreen from '../screens/WorkoutHubScreen';
 import ActiveWorkoutBar from '../components/ActiveWorkoutBar';
+import SettingsScreen from '../screens/SettingsScreen';
 
 const Tab = createBottomTabNavigator();
 const RootStack = createNativeStackNavigator();
@@ -38,7 +39,7 @@ function MainTabs() {
           options={{
             title: 'Workouts',
             tabBarLabel: 'Log Workout',
-            tabBarIcon: ({ color }) => <Icon name="add-circle" color={color} size={32} />,
+            tabBarIcon: ({ color }) => <Icon name="add-circle" color={color} size={32} />, 
           }}
         />
         <Tab.Screen 
@@ -46,8 +47,14 @@ function MainTabs() {
           component={ProgressScreen}
           options={{ tabBarIcon: ({ color }) => <Icon name="trending-up" color={color} /> }}
         />
+        <Tab.Screen
+          name="Settings"
+          component={SettingsScreen}
+          options={{
+            tabBarIcon: ({ color }) => <Icon name="settings" color={color} />, 
+          }}
+        />
       </Tab.Navigator>
-      
       <ActiveWorkoutBar />
     </View>
   );

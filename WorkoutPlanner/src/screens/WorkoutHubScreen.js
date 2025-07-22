@@ -15,13 +15,14 @@ export default function WorkoutHubScreen() {
   const workoutHistory = useSelector(state => state.workouts.history);
 
   const handleStartNew = () => {
-    dispatch(startWorkout({ name: 'New Workout', notes: '', exercises: [] }));
+    dispatch(startWorkout({ id: (Date.now() + Math.random()).toString(), name: 'New Workout', notes: '', exercises: [] }));
     navigation.navigate('LogWorkout');
   };
 
   const handleSelectRoutine = (routine) => {
     const freshRoutine = {
       ...routine,
+      id: (Date.now() + Math.random()).toString(),
       exercises: routine.exercises.map(ex => ({
         ...ex,
         sets: ex.sets.map(set => ({ ...set, completed: false }))

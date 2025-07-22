@@ -1,5 +1,5 @@
 import React, { useState, useLayoutEffect, useCallback, useEffect, useMemo, useRef } from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, TextInput, Alert, Keyboard, FlatList } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, TextInput, Alert, Keyboard, FlatList, Modal } from 'react-native';
 import { useDispatch, useSelector } from 'react-redux';
 import { Icon, Button, Input } from 'react-native-elements';
 import { updateActiveWorkout, finishWorkout, cancelWorkout, tickTimer } from '../store/workoutSlice';
@@ -22,7 +22,10 @@ const ExerciseLogger = ({
   previousSets,
   drag,
   isActive,
+  onAddSpecialSet, // NEW PROP
 }) => {
+  const [menuVisible, setMenuVisible] = useState(false);
+
   const renderDeleteAction = (setIndex) => (
     <TouchableOpacity style={styles.deleteButton} onPress={() => onRemoveSet(exerciseIndex, setIndex)}>
       <Icon name="trash" type="ionicon" color={COLORS.white} />
@@ -32,7 +35,8 @@ const ExerciseLogger = ({
   const renderSetItem = ({ item: set, drag: dragSet, isActive: isDragging, getIndex }) => {
     const setIndex = getIndex();
     const prev = previousSets ? previousSets[setIndex] : null;
-    
+    // Determine label for set
+    let setLabel = (set.type === 'warmup') ? 'W' : (set.type === 'cooldown') ? 'C' : (set.type === 'drop') ? 'D' : (setIndex + 1);
     return (
       <Swipeable renderRightActions={() => renderDeleteAction(setIndex)} overshootRight={false}>
         <TouchableOpacity 
@@ -41,7 +45,7 @@ const ExerciseLogger = ({
           style={[styles.setRow, isDragging && styles.draggingRow]}
         >
           <Icon name="menu" type="ionicon" color={COLORS.border} containerStyle={{ marginRight: 15 }} />
-          <Text style={styles.setText}>{setIndex + 1}</Text>
+          <Text style={styles.setText}>{setLabel}</Text>
           <Text style={styles.prevText}>{prev ? `${prev.weight}kg x ${prev.reps}` : '—'}</Text>
           <TextInput 
             style={styles.inputText} 
@@ -81,8 +85,34 @@ const ExerciseLogger = ({
     >
       <View style={styles.exerciseHeader}>
         <Text style={styles.exerciseName}>{exercise.name}</Text>
-        <Icon name="menu" type="ionicon" color={COLORS.border} />
+        <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+          <TouchableOpacity onPress={() => setMenuVisible(true)}>
+            <Icon name="more-vert" type="material" color={COLORS.border} size={28} />
+          </TouchableOpacity>
+          <Icon name="menu" type="ionicon" color={COLORS.border} />
+        </View>
       </View>
+      {/* Modal for 3-dot menu */}
+      <Modal
+        visible={menuVisible}
+        transparent
+        animationType="fade"
+        onRequestClose={() => setMenuVisible(false)}
+      >
+        <TouchableOpacity style={styles.modalOverlay} activeOpacity={1} onPress={() => setMenuVisible(false)}>
+          <View style={styles.modalMenu}>
+            <TouchableOpacity style={styles.menuItem} onPress={() => { setMenuVisible(false); onAddSpecialSet(exerciseIndex, 'warmup'); }}>
+              <Text style={styles.menuItemText}>Add Warm-up Set</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.menuItem} onPress={() => { setMenuVisible(false); onAddSpecialSet(exerciseIndex, 'cooldown'); }}>
+              <Text style={styles.menuItemText}>Add Cool-down Set</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.menuItem} onPress={() => { setMenuVisible(false); onAddSpecialSet(exerciseIndex, 'drop'); }}>
+              <Text style={styles.menuItemText}>Add Drop Set</Text>
+            </TouchableOpacity>
+          </View>
+        </TouchableOpacity>
+      </Modal>
       <View style={styles.pinnedNoteContainer}>
         <Icon name="bookmark" type="ionicon" color="#F59E0B" size={16} />
         <TextInput
@@ -301,6 +331,15 @@ export default function LogWorkoutScreen({ navigation }) {
     </TouchableOpacity>
   ), [handleSelectExercise]);
 
+  // Handler to add special set
+  const handleAddSpecialSet = useCallback((exIndex, type) => {
+    const newExercises = [...(currentSession.exercises || [])];
+    if (newExercises[exIndex]) {
+      newExercises[exIndex].sets.push({ weight: '', reps: '', completed: false, type });
+      dispatch(updateActiveWorkout({ exercises: newExercises }));
+    }
+  }, [currentSession.exercises, dispatch]);
+
   // Header effect
   useLayoutEffect(() => {
     const minutes = Math.floor((currentSession.elapsedTime || 0) / 60).toString().padStart(2, '0');
@@ -393,6 +432,7 @@ export default function LogWorkoutScreen({ navigation }) {
         previousSets={previousSets}
         drag={drag}
         isActive={isActive}
+        onAddSpecialSet={handleAddSpecialSet} // NEW PROP
       />
     );
   };
@@ -625,5 +665,29 @@ const styles = StyleSheet.create({
     fontSize: 14,
     color: '#8A8A8E',
     textAlign: 'center',
+  },
+  modalOverlay: {
+    flex: 1,
+    backgroundColor: 'rgba(0,0,0,0.2)',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  modalMenu: {
+    backgroundColor: COLORS.white,
+    borderRadius: 12,
+    padding: 20,
+    minWidth: 220,
+    elevation: 8,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.2,
+    shadowRadius: 4,
+  },
+  menuItem: {
+    paddingVertical: 12,
+  },
+  menuItemText: {
+    fontSize: 16,
+    color: COLORS.text,
   },
 });
